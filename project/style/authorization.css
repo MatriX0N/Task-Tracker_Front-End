@@ -1,0 +1,284 @@
+.desktop-4,
+.desktop-4 * {
+  box-sizing: border-box;
+}
+.desktop-4 {
+  background: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-1 {
+  background: #f5f5f5;
+  width: 1920px;
+  height: 72px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+}
+.task-tracker {
+  color: linear-gradient(
+    90deg,
+    rgba(255, 5, 230, 1) 0%,
+    rgba(255, 214, 153, 1) 100%
+  );
+  text-align: left;
+  font-family: "Pacifico-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 71px;
+  top: 8px;
+}
+.group-56 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-26 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 5, 230, 1) 0%,
+    rgba(255, 214, 153, 1) 100%
+  );
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+.rectangle-27 {
+  background: #ffffff;
+  border-radius: 2px;
+  width: 11px;
+  height: 22px;
+  position: absolute;
+  left: 27px;
+  top: 26px;
+}
+.rectangle-28 {
+  background: #ffffff;
+  border-radius: 2px;
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  left: 44px;
+  top: 26px;
+}
+.authorization {
+  width: 979px;
+  height: 569px;
+  position: absolute;
+  left: 470px;
+  top: 256px;
+}
+.rectangle-18 {
+  border-radius: 0px;
+  width: 979px;
+  height: 569px;
+  position: absolute;
+  left: calc(50% - 489.5px);
+  top: calc(50% - 284.5px);
+  overflow: visible;
+}
+.frame-22 {
+  width: 477px;
+  height: 338px;
+  position: absolute;
+  left: 251px;
+  top: 93px;
+}
+.group-67 {
+  width: 477px;
+  height: 79px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-19 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0px solid transparent;
+  transition: border 0.1s ease;
+  padding-left: 26px;
+}
+.rectangle-19:hover{
+border: 3px solid #000000;
+}
+input.rectangle-19{
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+}
+.enter-your-email-address {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 36.9%;
+  left: 5.45%;
+  width: 57.65%;
+  bottom: 30.38%;
+  top: 30.38%;
+  height: 39.24%;
+}
+.group-61 {
+  width: 477px;
+  height: 79px;
+  position: absolute;
+  left: 0px;
+  top: 104px;
+}
+.enter-your-password {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 46.96%;
+  left: 5.45%;
+  width: 47.59%;
+  bottom: 30.38%;
+  top: 30.38%;
+  height: 39.24%;
+}
+.forgot-your-password {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 208px;
+}
+.continue {
+  width: 220px;
+  height: 52px;
+  position: absolute;
+  left: 129px;
+  top: 269px;
+}
+.rectangle-20 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0px solid transparent;
+  transition: border 0.1s ease;
+}
+
+.rectangle-20:hover{
+  border: 3px solid #000000;
+}
+
+.continue2 {
+  color: #000000;
+  text-align: left;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  right: 17.27%;
+  left: 17.73%;
+  width: 65%;
+  bottom: 9.62%;
+  top: 9.62%;
+  height: 80.77%;
+}
+.frame-23 {
+  width: 478px;
+  height: 58px;
+  position: absolute;
+  left: 249px;
+  top: 437px;
+}
+.rectangle-22 {
+  background: rgba(121, 117, 117, 0.29);
+  width: 167px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.rectangle-23 {
+  background: rgba(121, 117, 117, 0.29);
+  width: 167px;
+  height: 4px;
+  position: absolute;
+  left: 311px;
+  top: 10px;
+}
+.new-to-this-site {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 179px;
+  top: 0px;
+}
+.group-68 {
+  width: 225px;
+  height: 24px;
+  position: absolute;
+  left: 128px;
+  top: 29px;
+}
+.create-a-new-account {
+  color: #000000;
+  text-align: left;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  right: 12.44%;
+  left: 12%;
+  width: 75.56%;
+  bottom: 8.33%;
+  top: 8.33%;
+  height: 83.33%;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.rectangle-200 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0px solid transparent;
+  transition: border 0.1s ease;
+}
+
+.rectangle-200:hover{
+  border: 2px solid #000000;
+}

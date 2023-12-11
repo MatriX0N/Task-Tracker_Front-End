@@ -1,0 +1,364 @@
+.desktop-5,
+.desktop-5 * {
+  box-sizing: border-box;
+}
+.desktop-5 {
+  background: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-1 {
+  background: #f5f5f5;
+  width: 1920px;
+  height: 72px;
+  position: absolute;
+  left: calc(50% - 960px);
+  top: 0px;
+}
+.task-tracker {
+  color: linear-gradient(
+    90deg,
+    rgba(255, 5, 230, 1) 0%,
+    rgba(255, 214, 153, 1) 100%
+  );
+  text-align: left;
+  font-family: "Pacifico-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 71px;
+  top: 8px;
+}
+.group-56 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-26 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 5, 230, 1) 0%,
+    rgba(255, 214, 153, 1) 100%
+  );
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+.rectangle-27 {
+  background: #ffffff;
+  border-radius: 2px;
+  width: 11px;
+  height: 22px;
+  position: absolute;
+  left: 27px;
+  top: 26px;
+}
+.rectangle-28 {
+  background: #ffffff;
+  border-radius: 2px;
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  left: 44px;
+  top: 26px;
+}
+.registration {
+  width: 979px;
+  height: 569px;
+  position: absolute;
+  left: 470px;
+  top: 256px;
+}
+.rectangle-18 {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  border-radius: 30px;
+  width: 979px;
+  height: 569px;
+  position: absolute;
+  left: calc(50% - 489.5px);
+  top: calc(50% - 284.5px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.frame-20 {
+  width: 476px;
+  height: 449px;
+  position: absolute;
+  left: 251px;
+  top: 29px;
+}
+.passwords-must-be-at-least-6-characters {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 26px;
+  top: 242px;
+}
+.re-enter-password {
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 271px;
+}
+.group-63 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-19 {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: calc(50% - 238px);
+  top: calc(50% - 22.5px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.re-enter-your-password {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 26px;
+  top: 7px;
+  width: 270px;
+  height: 31px;
+}
+.enter-first-name {
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.rectangle-20 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0px solid transparent;
+  transition: border 0.1s ease;
+  padding-left: 26px;
+}
+
+.rectangle-20:hover{
+  border: 3px solid #000000;
+}
+
+input.rectangle-20{
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+}
+.rectangle-200 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0px solid transparent;
+  transition: border 0.1s ease;
+}
+
+.rectangle-200:hover{
+  border: 2px solid #000000;
+}
+.enter-your-first-name {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 18.28%;
+  left: 5.46%;
+  width: 76.26%;
+  bottom: 13.33%;
+  top: 15.56%;
+  height: 71.11%;
+}
+
+.enter-last-name {
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 63px;
+}
+.rectangle-192 {
+  background: #ffffff;
+  border-radius: 30px;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.enter-your-last-name {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 44.96%;
+  left: 5.46%;
+  width: 49.58%;
+  bottom: 15.56%;
+  top: 15.56%;
+  height: 68.89%;
+}
+.enter-login {
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 126px;
+}
+.enter-email-address {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 18.28%;
+  left: 5.46%;
+  width: 76.26%;
+  bottom: 13.33%;
+  top: 15.56%;
+  height: 71.11%;
+}
+.enter-password {
+  width: 476px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 189px;
+}
+.group-61 {
+  position: absolute;
+  inset: 0;
+}
+.enter-your-password {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 26px;
+  top: 7px;
+  width: 236px;
+  height: 31px;
+}
+.continue {
+  width: 220px;
+  height: 52px;
+  position: absolute;
+  left: 116px;
+  top: 387px;
+}
+.continue2 {
+  color: #000000;
+  text-align: left;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  right: 17.27%;
+  left: 17.73%;
+  width: 65%;
+  bottom: 9.62%;
+  top: 9.62%;
+  height: 80.77%;
+}
+.frame-21 {
+  width: 478px;
+  height: 55px;
+  position: absolute;
+  left: 250px;
+  top: 496px;
+}
+.rectangle-22 {
+  background: rgba(121, 117, 117, 0.29);
+  width: 130px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  top: 11px;
+}
+.rectangle-23 {
+  background: rgba(121, 117, 117, 0.29);
+  width: 128px;
+  height: 4px;
+  position: absolute;
+  left: 350px;
+  top: 11px;
+}
+.already-have-an-account {
+  color: #797575;
+  text-align: left;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 145px;
+  top: 0px;
+}
+.group-632 {
+  width: 89px;
+  height: 24px;
+  position: absolute;
+  left: 188px;
+  top: 27px;
+}
+.sing-in {
+  color: #000000;
+  text-align: left;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  right: 20.22%;
+  left: 20.22%;
+  width: 89.55%;
+  bottom: 8.33%;
+  top: 8.33%;
+  height: 83.33%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
