@@ -6,7 +6,7 @@
   background: #ffffff;
   width: 1920px;
   height: 1080px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 .rectangle-1 {
@@ -47,7 +47,7 @@
   justify-content: center;
   width: 84px;
   position: absolute;
-  left: 1813px;
+  left: 1783px;
   top: 18px;
 }
 .div {
