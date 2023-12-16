@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/katalog.css" />
+    <link rel="stylesheet" href="./style/boards.css" />
 
     <style>
       a,
@@ -696,13 +696,12 @@
       </div>
 
     </div>
-
-    <div class="navigation-bar">
-      <div class="navigation-bar-line-3"></div>
-      <button id="showDivsButton" class="navigation-bar-button">
-        <div class="navigation-bar-rectangle">
+    <div class="side-bar">
+      <div class="side-bar-rectangle"></div>
+      <a href="katalog.html">
+      <button class="side-bar-group">
         <svg
-          class="navigation-bar-leaderboard"
+          class="side-bar-leaderboard"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -710,7 +709,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <mask
-            id="mask0_620_153"
+            id="mask0_705_84"
             style="mask-type: alpha"
             maskUnits="userSpaceOnUse"
             x="0"
@@ -720,377 +719,242 @@
           >
             <rect width="24" height="24" fill="#D9D9D9" />
           </mask>
-          <g mask="url(#mask0_620_153)">
+          <g mask="url(#mask0_705_84)">
             <path
               d="M4 12.7295V20.7842H8V12.7295H4ZM10 6.68848V20.7842H14V6.68848H10ZM16 14.7432V20.7842H20V14.7432H16ZM20 22.7979H4C3.45 22.7979 2.97917 22.6007 2.5875 22.2063C2.19583 21.812 2 21.3379 2 20.7842V12.7295C2 12.1757 2.19583 11.7017 2.5875 11.3073C2.97917 10.913 3.45 10.7158 4 10.7158H8V6.68848C8 6.13472 8.19583 5.66066 8.5875 5.26632C8.97917 4.87198 9.45 4.6748 10 4.6748H14C14.55 4.6748 15.0208 4.87198 15.4125 5.26632C15.8042 5.66066 16 6.13472 16 6.68848V12.7295H20C20.55 12.7295 21.0208 12.9267 21.4125 13.321C21.8042 13.7154 22 14.1894 22 14.7432V20.7842C22 21.3379 21.8042 21.812 21.4125 22.2063C21.0208 22.6007 20.55 22.7979 20 22.7979Z"
               fill="#1D192A"
             />
           </g>
         </svg>
-      <div class="navigation-bar-div">Дошки</div>
-      </div>
-      </button>
-      <div class="navigation-bar-project">
-        Проекти
-      </div>
-      <button class="navigation-bar-practice" onclick="toggleDivs('practice1Div', 'participants1Div')">
-        <div class="navigation-practice">Practice</div>
-        <svg
-            class="expand-more"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <mask
-              id="mask0_620_229"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="24"
-              height="25"
-            >
-              <rect y="0.00109863" width="24" height="24" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_620_229)">
-              <path
-                d="M12.0003 14.951C11.867 14.951 11.742 14.9302 11.6253 14.8885C11.5086 14.8469 11.4003 14.776 11.3003 14.676L6.70029 10.076C6.51696 9.89271 6.42529 9.65938 6.42529 9.37605C6.42529 9.09271 6.51696 8.85938 6.70029 8.67605C6.88363 8.49271 7.11696 8.40105 7.40029 8.40105C7.68363 8.40105 7.91696 8.49271 8.10029 8.67605L12.0003 12.576L15.9003 8.67605C16.0836 8.49271 16.317 8.40105 16.6003 8.40105C16.8836 8.40105 17.117 8.49271 17.3003 8.67605C17.4836 8.85938 17.5753 9.09271 17.5753 9.37605C17.5753 9.65938 17.4836 9.89271 17.3003 10.076L12.7003 14.676C12.6003 14.776 12.492 14.8469 12.3753 14.8885C12.2586 14.9302 12.1336 14.951 12.0003 14.951Z"
-                fill="#48454D"
-              />
-            </g>
-        </svg>
-        <button id="practice1Div" class="navigation-bar-button1">
-          <div class="navigation-bar-rectangle">
-          <svg
-            class="navigation-bar-leaderboard"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_620_153"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="24"
-              height="24"
-            >
-              <rect width="24" height="24" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_620_153)">
-              <path
-                d="M4 12.7295V20.7842H8V12.7295H4ZM10 6.68848V20.7842H14V6.68848H10ZM16 14.7432V20.7842H20V14.7432H16ZM20 22.7979H4C3.45 22.7979 2.97917 22.6007 2.5875 22.2063C2.19583 21.812 2 21.3379 2 20.7842V12.7295C2 12.1757 2.19583 11.7017 2.5875 11.3073C2.97917 10.913 3.45 10.7158 4 10.7158H8V6.68848C8 6.13472 8.19583 5.66066 8.5875 5.26632C8.97917 4.87198 9.45 4.6748 10 4.6748H14C14.55 4.6748 15.0208 4.87198 15.4125 5.26632C15.8042 5.66066 16 6.13472 16 6.68848V12.7295H20C20.55 12.7295 21.0208 12.9267 21.4125 13.321C21.8042 13.7154 22 14.1894 22 14.7432V20.7842C22 21.3379 21.8042 21.812 21.4125 22.2063C21.0208 22.6007 20.55 22.7979 20 22.7979Z"
-                fill="#1D192A"
-              />
-            </g>
-          </svg>
-        <div class="navigation-bar-div">Дошки</div>
-        </div>
-        </button>
-        <a href="participants.html">
-        <button id="participants1Div" class="navigation-bar-participants">
-          <div class="navigation-bar-group">
-            <div class="navigation-bar-participants-div">Учасники</div>
-            <svg
-              class="navigation-bar-person"
-              width="27"
-              height="25"
-              viewBox="0 0 27 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_620_408"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="27"
-                height="25"
-              >
-                <rect width="26.5846" height="24.51" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_620_408)">
-                <path
-                  d="M13.2923 14.475C12.0739 14.475 11.0308 14.0723 10.1631 13.2668C9.2954 12.4614 8.86156 11.4931 8.86156 10.3621C8.86156 9.23102 9.2954 8.26277 10.1631 7.45732C11.0308 6.65187 12.0739 6.24915 13.2923 6.24915C14.5108 6.24915 15.5539 6.65187 16.4216 7.45732C17.2892 8.26277 17.7231 9.23102 17.7231 10.3621C17.7231 11.4931 17.2892 12.4614 16.4216 13.2668C15.5539 14.0723 14.5108 14.475 13.2923 14.475ZM19.9385 22.7008H6.64617C6.03694 22.7008 5.5154 22.4995 5.08156 22.0968C4.64771 21.694 4.43079 21.2099 4.43079 20.6444V19.8218C4.43079 19.2391 4.59232 18.7036 4.9154 18.2152C5.23848 17.7268 5.66771 17.354 6.20309 17.097C7.34771 16.5657 8.51079 16.1673 9.69232 15.9017C10.8739 15.636 12.0739 15.5032 13.2923 15.5032C14.5108 15.5032 15.7108 15.636 16.8923 15.9017C18.0739 16.1673 19.2369 16.5657 20.3816 17.097C20.9169 17.354 21.3462 17.7268 21.6692 18.2152C21.9923 18.7036 22.1539 19.2391 22.1539 19.8218V20.6444C22.1539 21.2099 21.9369 21.694 21.5031 22.0968C21.0692 22.4995 20.5477 22.7008 19.9385 22.7008ZM6.64617 20.6444H19.9385V19.8218C19.9385 19.6333 19.8877 19.4619 19.7862 19.3077C19.6846 19.1534 19.5508 19.0335 19.3846 18.9478C18.3877 18.4851 17.3816 18.1381 16.3662 17.9067C15.3508 17.6754 14.3262 17.5597 13.2923 17.5597C12.2585 17.5597 11.2339 17.6754 10.2185 17.9067C9.20309 18.1381 8.19694 18.4851 7.20002 18.9478C7.03386 19.0335 6.90002 19.1534 6.79848 19.3077C6.69694 19.4619 6.64617 19.6333 6.64617 19.8218V20.6444ZM13.2923 12.4185C13.9016 12.4185 14.4231 12.2172 14.8569 11.8144C15.2908 11.4117 15.5077 10.9276 15.5077 10.3621C15.5077 9.79654 15.2908 9.31242 14.8569 8.90969C14.4231 8.50697 13.9016 8.30561 13.2923 8.30561C12.6831 8.30561 12.1616 8.50697 11.7277 8.90969C11.2939 9.31242 11.0769 9.79654 11.0769 10.3621C11.0769 10.9276 11.2939 11.4117 11.7277 11.8144C12.1616 12.2172 12.6831 12.4185 13.2923 12.4185Z"
-                  fill="#48454D"
-                />
-              </g>
-            </svg>
-            <svg
-            class="navigation-bar-add"
-            width="16"
-            height="15"
-            viewBox="0 0 16 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_620_411"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="16"
-              height="15"
-            >
-              <rect
-                x="0.49231"
-                y="0.106201"
-                width="15.5077"
-                height="14.2975"
-                fill="#D9D9D9"
-              />
-            </mask>
-            <g mask="url(#mask0_620_411)">
-              <path
-                d="M7.59995 8.44123H4.36918C4.1861 8.44123 4.03264 8.38375 3.90879 8.26879C3.78495 8.15383 3.72302 8.01138 3.72302 7.84143C3.72302 7.67149 3.78495 7.52904 3.90879 7.41407C4.03264 7.29911 4.1861 7.24163 4.36918 7.24163H7.59995V4.24262C7.59995 4.07268 7.66187 3.93023 7.78571 3.81527C7.90956 3.7003 8.06302 3.64282 8.2461 3.64282C8.42918 3.64282 8.58264 3.7003 8.70648 3.81527C8.83033 3.93023 8.89225 4.07268 8.89225 4.24262V7.24163H12.123C12.3061 7.24163 12.4596 7.29911 12.5834 7.41407C12.7073 7.52904 12.7692 7.67149 12.7692 7.84143C12.7692 8.01138 12.7073 8.15383 12.5834 8.26879C12.4596 8.38375 12.3061 8.44123 12.123 8.44123H8.89225V11.4402C8.89225 11.6102 8.83033 11.7526 8.70648 11.8676C8.58264 11.9826 8.42918 12.04 8.2461 12.04C8.06302 12.04 7.90956 11.9826 7.78571 11.8676C7.66187 11.7526 7.59995 11.6102 7.59995 11.4402V8.44123Z"
-                fill="#48454D"
-              />
-            </g>
-          </svg>
-          </div>
-        </button>
-      </a>
-      </button>
-      <button class="navigation-bar-practice" onclick="toggleDivs('practice2Div', 'participants2Div')">
-        <div class="navigation-practice">Practice2</div>
-        <svg
-            class="expand-more"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            >
-            <mask
-              id="mask0_620_229"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="24"
-              height="25"
-            >
-              <rect y="0.00109863" width="24" height="24" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_620_229)">
-              <path
-                d="M12.0003 14.951C11.867 14.951 11.742 14.9302 11.6253 14.8885C11.5086 14.8469 11.4003 14.776 11.3003 14.676L6.70029 10.076C6.51696 9.89271 6.42529 9.65938 6.42529 9.37605C6.42529 9.09271 6.51696 8.85938 6.70029 8.67605C6.88363 8.49271 7.11696 8.40105 7.40029 8.40105C7.68363 8.40105 7.91696 8.49271 8.10029 8.67605L12.0003 12.576L15.9003 8.67605C16.0836 8.49271 16.317 8.40105 16.6003 8.40105C16.8836 8.40105 17.117 8.49271 17.3003 8.67605C17.4836 8.85938 17.5753 9.09271 17.5753 9.37605C17.5753 9.65938 17.4836 9.89271 17.3003 10.076L12.7003 14.676C12.6003 14.776 12.492 14.8469 12.3753 14.8885C12.2586 14.9302 12.1336 14.951 12.0003 14.951Z"
-                fill="#48454D"
-              />
-            </g>
-        </svg>
-        <button id="practice2Div" class="navigation-bar-button1">
-          <div class="navigation-bar-rectangle">
-          <svg
-            class="navigation-bar-leaderboard"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_620_153"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="24"
-              height="24"
-            >
-              <rect width="24" height="24" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_620_153)">
-              <path
-                d="M4 12.7295V20.7842H8V12.7295H4ZM10 6.68848V20.7842H14V6.68848H10ZM16 14.7432V20.7842H20V14.7432H16ZM20 22.7979H4C3.45 22.7979 2.97917 22.6007 2.5875 22.2063C2.19583 21.812 2 21.3379 2 20.7842V12.7295C2 12.1757 2.19583 11.7017 2.5875 11.3073C2.97917 10.913 3.45 10.7158 4 10.7158H8V6.68848C8 6.13472 8.19583 5.66066 8.5875 5.26632C8.97917 4.87198 9.45 4.6748 10 4.6748H14C14.55 4.6748 15.0208 4.87198 15.4125 5.26632C15.8042 5.66066 16 6.13472 16 6.68848V12.7295H20C20.55 12.7295 21.0208 12.9267 21.4125 13.321C21.8042 13.7154 22 14.1894 22 14.7432V20.7842C22 21.3379 21.8042 21.812 21.4125 22.2063C21.0208 22.6007 20.55 22.7979 20 22.7979Z"
-                fill="#1D192A"
-              />
-            </g>
-          </svg>
-        <div class="navigation-bar-div">Дошки</div>
-        </div>
-        </button>
-        <a href="participants.html">
-        <button id="participants2Div" class="navigation-bar-participants">
-          <div class="navigation-bar-group">
-            <div class="navigation-bar-participants-div">Учасники</div>
-            <svg
-              class="navigation-bar-person"
-              width="27"
-              height="25"
-              viewBox="0 0 27 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask
-                id="mask0_620_408"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="27"
-                height="25"
-              >
-                <rect width="26.5846" height="24.51" fill="#D9D9D9" />
-              </mask>
-              <g mask="url(#mask0_620_408)">
-                <path
-                  d="M13.2923 14.475C12.0739 14.475 11.0308 14.0723 10.1631 13.2668C9.2954 12.4614 8.86156 11.4931 8.86156 10.3621C8.86156 9.23102 9.2954 8.26277 10.1631 7.45732C11.0308 6.65187 12.0739 6.24915 13.2923 6.24915C14.5108 6.24915 15.5539 6.65187 16.4216 7.45732C17.2892 8.26277 17.7231 9.23102 17.7231 10.3621C17.7231 11.4931 17.2892 12.4614 16.4216 13.2668C15.5539 14.0723 14.5108 14.475 13.2923 14.475ZM19.9385 22.7008H6.64617C6.03694 22.7008 5.5154 22.4995 5.08156 22.0968C4.64771 21.694 4.43079 21.2099 4.43079 20.6444V19.8218C4.43079 19.2391 4.59232 18.7036 4.9154 18.2152C5.23848 17.7268 5.66771 17.354 6.20309 17.097C7.34771 16.5657 8.51079 16.1673 9.69232 15.9017C10.8739 15.636 12.0739 15.5032 13.2923 15.5032C14.5108 15.5032 15.7108 15.636 16.8923 15.9017C18.0739 16.1673 19.2369 16.5657 20.3816 17.097C20.9169 17.354 21.3462 17.7268 21.6692 18.2152C21.9923 18.7036 22.1539 19.2391 22.1539 19.8218V20.6444C22.1539 21.2099 21.9369 21.694 21.5031 22.0968C21.0692 22.4995 20.5477 22.7008 19.9385 22.7008ZM6.64617 20.6444H19.9385V19.8218C19.9385 19.6333 19.8877 19.4619 19.7862 19.3077C19.6846 19.1534 19.5508 19.0335 19.3846 18.9478C18.3877 18.4851 17.3816 18.1381 16.3662 17.9067C15.3508 17.6754 14.3262 17.5597 13.2923 17.5597C12.2585 17.5597 11.2339 17.6754 10.2185 17.9067C9.20309 18.1381 8.19694 18.4851 7.20002 18.9478C7.03386 19.0335 6.90002 19.1534 6.79848 19.3077C6.69694 19.4619 6.64617 19.6333 6.64617 19.8218V20.6444ZM13.2923 12.4185C13.9016 12.4185 14.4231 12.2172 14.8569 11.8144C15.2908 11.4117 15.5077 10.9276 15.5077 10.3621C15.5077 9.79654 15.2908 9.31242 14.8569 8.90969C14.4231 8.50697 13.9016 8.30561 13.2923 8.30561C12.6831 8.30561 12.1616 8.50697 11.7277 8.90969C11.2939 9.31242 11.0769 9.79654 11.0769 10.3621C11.0769 10.9276 11.2939 11.4117 11.7277 11.8144C12.1616 12.2172 12.6831 12.4185 13.2923 12.4185Z"
-                  fill="#48454D"
-                />
-              </g>
-            </svg>
-          </div>
-          <svg
-            class="navigation-bar-add"
-            width="16"
-            height="15"
-            viewBox="0 0 16 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="mask0_620_411"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="16"
-              height="15"
-            >
-              <rect
-                x="0.49231"
-                y="0.106201"
-                width="15.5077"
-                height="14.2975"
-                fill="#D9D9D9"
-              />
-            </mask>
-            <g mask="url(#mask0_620_411)">
-              <path
-                d="M7.59995 8.44123H4.36918C4.1861 8.44123 4.03264 8.38375 3.90879 8.26879C3.78495 8.15383 3.72302 8.01138 3.72302 7.84143C3.72302 7.67149 3.78495 7.52904 3.90879 7.41407C4.03264 7.29911 4.1861 7.24163 4.36918 7.24163H7.59995V4.24262C7.59995 4.07268 7.66187 3.93023 7.78571 3.81527C7.90956 3.7003 8.06302 3.64282 8.2461 3.64282C8.42918 3.64282 8.58264 3.7003 8.70648 3.81527C8.83033 3.93023 8.89225 4.07268 8.89225 4.24262V7.24163H12.123C12.3061 7.24163 12.4596 7.29911 12.5834 7.41407C12.7073 7.52904 12.7692 7.67149 12.7692 7.84143C12.7692 8.01138 12.7073 8.15383 12.5834 8.26879C12.4596 8.38375 12.3061 8.44123 12.123 8.44123H8.89225V11.4402C8.89225 11.6102 8.83033 11.7526 8.70648 11.8676C8.58264 11.9826 8.42918 12.04 8.2461 12.04C8.06302 12.04 7.90956 11.9826 7.78571 11.8676C7.66187 11.7526 7.59995 11.6102 7.59995 11.4402V8.44123Z"
-                fill="#48454D"
-              />
-            </g>
-          </svg>
-        </button>
-      </a>
-      </button>
-    </div>
     
-    <div class="main">
-      <div class="main-recent">
-        <div class="main-div-myproject">Нещодавні</div>
-      <div class="main-group-img">
-      <div class="main-group">
-        <img class="main-rectangle" src="./image/lm.png" />
-        <div class="main-task-tracker">TaskTracker</div>
-      </div>
-      <div class="main-group">
-        <img class="main-rectangle" src="./image/lm.png" />
-        <div class="main-task-tracker">TaskTracker</div>
-      </div>
-      <div class="main-group">
-        <img class="main-rectangle" src="./image/lm.png" />
-        <div class="main-task-tracker">TaskTracker</div>
-      </div>
-      </div>
-      <div class="main-line"></div>
-      </div>
-
-
-
-
-      <div class="main-recent">
-        <div class="main-div-myproject">Мої Проекти</div>
-        <div class="main-div-practice">Practice</div>
-        <div class="main-group-img">
-          <a href="boards.html">
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-      </a>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-      </div>
-      </div>
-
-
-      <div class="main-recent">
-        <div class="main-div-practice">Practice2</div>
-        <div class="main-group-img">
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-      </div>
-      <div class="main-line"></div>
-      </div>      
-
-      <div class="main-recent">
-      <div class="main-div-myproject">Гостьові Проекти</div>
-      <div class="main-div-practice">Practice</div>
-      <div class="main-group-img">
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-      </div>
-      </div>
-
-
-      <div class="main-recent">
-        <div class="main-div-practice">Practice2</div>
-        <div class="main-group-img">
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-        <div class="main-group">
-          <img class="main-rectangle" src="./image/lm.png" />
-          <div class="main-task-tracker">TaskTracker</div>
-        </div>
-      </div>
-    </div>
+        <div class="side-bar-div">Дошки</div>
+      </button>
+    </a>
+      <button class="side-bar-group1">
+        <div class="side-bar-div2">Учасники</div>
+        <svg
+          class="side-bar-person"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask
+            id="mask0_705_47"
+            style="mask-type: alpha"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="24"
+            height="24"
+          >
+            <rect width="24" height="24" fill="#D9D9D9" />
+          </mask>
+          <g mask="url(#mask0_705_47)">
+            <path
+              d="M12 14.1738C10.9 14.1738 9.95833 13.7795 9.175 12.9908C8.39167 12.2021 8 11.254 8 10.1465C8 9.03896 8.39167 8.09086 9.175 7.30217C9.95833 6.51348 10.9 6.11914 12 6.11914C13.1 6.11914 14.0417 6.51348 14.825 7.30217C15.6083 8.09086 16 9.03896 16 10.1465C16 11.254 15.6083 12.2021 14.825 12.9908C14.0417 13.7795 13.1 14.1738 12 14.1738ZM18 22.2285H6C5.45 22.2285 4.97917 22.0313 4.5875 21.637C4.19583 21.2427 4 20.7686 4 20.2148V19.4094C4 18.8388 4.14583 18.3144 4.4375 17.8362C4.72917 17.3579 5.11667 16.993 5.6 16.7413C6.63333 16.2211 7.68333 15.8309 8.75 15.5708C9.81667 15.3107 10.9 15.1807 12 15.1807C13.1 15.1807 14.1833 15.3107 15.25 15.5708C16.3167 15.8309 17.3667 16.2211 18.4 16.7413C18.8833 16.993 19.2708 17.3579 19.5625 17.8362C19.8542 18.3144 20 18.8388 20 19.4094V20.2148C20 20.7686 19.8042 21.2427 19.4125 21.637C19.0208 22.0313 18.55 22.2285 18 22.2285ZM6 20.2148H18V19.4094C18 19.2248 17.9542 19.057 17.8625 18.906C17.7708 18.7549 17.65 18.6375 17.5 18.5536C16.6 18.1005 15.6917 17.7607 14.775 17.5341C13.8583 17.3076 12.9333 17.1943 12 17.1943C11.0667 17.1943 10.1417 17.3076 9.225 17.5341C8.30833 17.7607 7.4 18.1005 6.5 18.5536C6.35 18.6375 6.22917 18.7549 6.1375 18.906C6.04583 19.057 6 19.2248 6 19.4094V20.2148ZM12 12.1602C12.55 12.1602 13.0208 11.963 13.4125 11.5686C13.8042 11.1743 14 10.7002 14 10.1465C14 9.59272 13.8042 9.11867 13.4125 8.72433C13.0208 8.32998 12.55 8.13281 12 8.13281C11.45 8.13281 10.9792 8.32998 10.5875 8.72433C10.1958 9.11867 10 9.59272 10 10.1465C10 10.7002 10.1958 11.1743 10.5875 11.5686C10.9792 11.963 11.45 12.1602 12 12.1602Z"
+              fill="#48454D"
+            />
+          </g>
+        </svg>
+      </button>
     </div>
 
 
+    <div class="navigation">
+      <div class="navigation-task-tracker">TaskTracker</div>
+      <button class="navigation-frame" id="practiceFrameButton">
+        <svg
+          class="person-add"
+          width="23"
+          height="16"
+          viewBox="0 0 23 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18.5 10C18.2167 10 17.9792 9.90417 17.7875 9.7125C17.5958 9.52083 17.5 9.28333 17.5 9V7H15.5C15.2167 7 14.9792 6.90417 14.7875 6.7125C14.5958 6.52083 14.5 6.28333 14.5 6C14.5 5.71667 14.5958 5.47917 14.7875 5.2875C14.9792 5.09583 15.2167 5 15.5 5H17.5V3C17.5 2.71667 17.5958 2.47917 17.7875 2.2875C17.9792 2.09583 18.2167 2 18.5 2C18.7833 2 19.0208 2.09583 19.2125 2.2875C19.4042 2.47917 19.5 2.71667 19.5 3V5H21.5C21.7833 5 22.0208 5.09583 22.2125 5.2875C22.4042 5.47917 22.5 5.71667 22.5 6C22.5 6.28333 22.4042 6.52083 22.2125 6.7125C22.0208 6.90417 21.7833 7 21.5 7H19.5V9C19.5 9.28333 19.4042 9.52083 19.2125 9.7125C19.0208 9.90417 18.7833 10 18.5 10ZM8.5 8C7.4 8 6.45833 7.60833 5.675 6.825C4.89167 6.04167 4.5 5.1 4.5 4C4.5 2.9 4.89167 1.95833 5.675 1.175C6.45833 0.391667 7.4 0 8.5 0C9.6 0 10.5417 0.391667 11.325 1.175C12.1083 1.95833 12.5 2.9 12.5 4C12.5 5.1 12.1083 6.04167 11.325 6.825C10.5417 7.60833 9.6 8 8.5 8ZM1.5 16C1.21667 16 0.979167 15.9042 0.7875 15.7125C0.595833 15.5208 0.5 15.2833 0.5 15V13.2C0.5 12.6333 0.645833 12.1125 0.9375 11.6375C1.22917 11.1625 1.61667 10.8 2.1 10.55C3.13333 10.0333 4.18333 9.64583 5.25 9.3875C6.31667 9.12917 7.4 9 8.5 9C9.6 9 10.6833 9.12917 11.75 9.3875C12.8167 9.64583 13.8667 10.0333 14.9 10.55C15.3833 10.8 15.7708 11.1625 16.0625 11.6375C16.3542 12.1125 16.5 12.6333 16.5 13.2V15C16.5 15.2833 16.4042 15.5208 16.2125 15.7125C16.0208 15.9042 15.7833 16 15.5 16H1.5ZM2.5 14H14.5V13.2C14.5 13.0167 14.4542 12.85 14.3625 12.7C14.2708 12.55 14.15 12.4333 14 12.35C13.1 11.9 12.1917 11.5625 11.275 11.3375C10.3583 11.1125 9.43333 11 8.5 11C7.56667 11 6.64167 11.1125 5.725 11.3375C4.80833 11.5625 3.9 11.9 3 12.35C2.85 12.4333 2.72917 12.55 2.6375 12.7C2.54583 12.85 2.5 13.0167 2.5 13.2V14ZM8.5 6C9.05 6 9.52083 5.80417 9.9125 5.4125C10.3042 5.02083 10.5 4.55 10.5 4C10.5 3.45 10.3042 2.97917 9.9125 2.5875C9.52083 2.19583 9.05 2 8.5 2C7.95 2 7.47917 2.19583 7.0875 2.5875C6.69583 2.97917 6.5 3.45 6.5 4C6.5 4.55 6.69583 5.02083 7.0875 5.4125C7.47917 5.80417 7.95 6 8.5 6Z"
+            fill="white"
+          />
+        </svg>
+      
+        <div class="navigation-div">Поділитися</div>
+      </button>
+      <button class="navigation-group">
+        <div class="navigation-ellipse"></div>
+        <div class="navigation-ellipse"></div>
+        <div class="navigation-ellipse"></div>
+      </button>
+    </div>
+
+    <div class="window-toshare" id="practiceFrameWindow">
+      <div class="window-toshare-rectangle">
+        <div class="window-toshare-div">Поділитися Дошкою</div>
+        <form>
+        <input class="window-toshare-frame window-toshare-div2" required placeholder="Адреса електронної пошти або ім’я...">
+        <button class="window-toshare-button">
+          <div class="window-toshare-div3">Поділитися</div>
+        </button>
+        </form>
+        <div class="window-toshare-main">
+        <div class="window-toshare-group">
+          <svg
+                class="window-toshare-user"
+                width="55"
+                height="55"
+                viewBox="0 0 55 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.5 55C42.6878 55 55 42.6878 55 27.5C55 12.3122 42.6878 0 27.5 0C12.3122 0 0 12.3122 0 27.5C0 42.6878 12.3122 55 27.5 55Z"
+                  fill="url(#pattern0)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_476_752"
+                      transform="translate(0 -0.611111) scale(0.00173611)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_476_752"
+                    width="576"
+                    height="1280"
+                    href="./image/6e52c5529ce897d39c81652116f731d7.jpg"
+                    />
+                </defs>
+            </svg>
+            <div class="window-toshare-user1">
+              <span>
+                <span class="window-toshare-user-span">
+                  Володимир Онищук
+                  <br />
+                </span>
+                <span class="window-toshare-user-span2">@user565423/Admin</span>
+              </span>
+            </div>
+            <button class="window-toshare-frame2">
+              <div class="window-toshare-div4">Адміністратор</div>
+            </button>
+        </div>
+        <div class="window-toshare-group">
+          <svg
+                class="window-toshare-user"
+                width="55"
+                height="55"
+                viewBox="0 0 55 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.5 55C42.6878 55 55 42.6878 55 27.5C55 12.3122 42.6878 0 27.5 0C12.3122 0 0 12.3122 0 27.5C0 42.6878 12.3122 55 27.5 55Z"
+                  fill="url(#pattern0)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_476_752"
+                      transform="translate(0 -0.611111) scale(0.00173611)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_476_752"
+                    width="576"
+                    height="1280"
+                    href="./image/6e52c5529ce897d39c81652116f731d7.jpg"
+                    />
+                </defs>
+            </svg>
+            <div class="window-toshare-user1">
+              <span>
+                <span class="window-toshare-user-span">
+                  Володимир Онищук
+                  <br />
+                </span>
+                <span class="window-toshare-user-span2">@user565423/Admin</span>
+              </span>
+            </div>
+            <button class="window-toshare-frame2">
+              <div class="window-toshare-div4">Учасник</div>
+            </button>
+        </div>
+        <div class="window-toshare-group">
+          <svg
+                class="window-toshare-user"
+                width="55"
+                height="55"
+                viewBox="0 0 55 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M27.5 55C42.6878 55 55 42.6878 55 27.5C55 12.3122 42.6878 0 27.5 0C12.3122 0 0 12.3122 0 27.5C0 42.6878 12.3122 55 27.5 55Z"
+                  fill="url(#pattern0)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_476_752"
+                      transform="translate(0 -0.611111) scale(0.00173611)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_476_752"
+                    width="576"
+                    height="1280"
+                    href="./image/6e52c5529ce897d39c81652116f731d7.jpg"
+                    />
+                </defs>
+            </svg>
+            <div class="window-toshare-user1">
+              <span>
+                <span class="window-toshare-user-span">
+                  Володимир Онищук
+                  <br />
+                </span>
+                <span class="window-toshare-user-span2">@user565423/Admin</span>
+              </span>
+            </div>
+            <button class="window-toshare-frame2">
+              <div class="window-toshare-div4">Учасник</div>
+            </button>
+        </div>
+      </div>
+      <button class="window-toshare-button2">
+        <div class="window-toshare-div5">Скопіювати посилання</div>
+      </button>
+      </div>
+    </div>
   <script>
-
+    function checkButton() {
+  console.log("Button clicked!");
+}
   var popupWindow = document.getElementById('popupWindow');
   var showWindowButton = document.getElementById('showWindowButton');
 
@@ -1300,49 +1164,27 @@ function closeCreateBoardsWindow() {
 
 
 
-function toggleDivs(practiceDivId, participantsDivId) {
-  var practiceDiv = document.getElementById(practiceDivId);
-  var participantsDiv = document.getElementById(participantsDivId);
+var practiceFrameWindow = document.getElementById('practiceFrameWindow');
+var practiceFrameButton = document.getElementById('practiceFrameButton');
 
-  // Перевіряємо, чи обидва елементи мають стиль display: none;
-  var bothHidden = practiceDiv.style.display === 'none' && participantsDiv.style.display === 'none';
+practiceFrameButton.addEventListener('click', function(e) {
+  e.stopPropagation();
+  togglePracticeFrameWindow();
+});
 
-  // Змінюємо стиль елементів в залежності від їх поточного стану
-  if (bothHidden) {
-    practiceDiv.style.display = 'block';
-    participantsDiv.style.display = 'block';
-  } else {
-    practiceDiv.style.display = 'none';
-    participantsDiv.style.display = 'none';
-  }
+function togglePracticeFrameWindow() {
+  practiceFrameWindow.style.display = (practiceFrameWindow.style.display === 'none' || practiceFrameWindow.style.display === '') ? 'block' : 'none';
 }
 
-// main дошки
-document.getElementById('practice1Div').addEventListener('click', function() {
-    // Знаходимо всі елементи з класом 'main-recent'
-    var divs = document.getElementsByClassName('main-recent');
+document.addEventListener('click', function(event) {
+  if (!practiceFrameWindow.contains(event.target) && event.target !== practiceFrameButton) {
+    closePracticeFrameWindow();
+  }
+});
 
-    // Перебираємо всі елементи і приховуємо їх, крім другого
-    for (var i = 0; i < divs.length; i++) {
-      if (i !== 1) { // залишаємо видимим тільки другий елемент (індекс 1)
-        divs[i].style.display = 'none';
-      } else {
-        divs[i].style.display = 'block'; // або 'inline-block', залежно від вашого макету
-      }
-    }
-  });
-
-  document.getElementById('showDivsButton').addEventListener('click', function() {
-    // Знаходимо всі елементи з класом 'main-recent'
-    var divs = document.getElementsByClassName('main-recent');
-
-    // Перебираємо всі елементи і встановлюємо їх видимість
-    for (var i = 0; i < divs.length; i++) {
-      divs[i].style.display = 'block'; // або 'inline-block', залежно від вашого макету
-    }
-  });
-
-  
+function closePracticeFrameWindow() {
+  practiceFrameWindow.style.display = 'none';
+}
 </script>
   </body>
 </html>
