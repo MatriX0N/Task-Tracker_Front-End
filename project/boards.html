@@ -760,8 +760,7 @@
         </svg>
       </button>
     </div>
-
-
+    
     <div class="navigation">
       <div class="navigation-task-tracker">TaskTracker</div>
       <button class="navigation-frame" id="practiceFrameButton">
@@ -951,10 +950,45 @@
       </button>
       </div>
     </div>
+
+    <div class="window-menu" id="windowMenu">
+      <div class="window-menu-rectangle">
+        <div class="window-menu-div">Меню</div>
+        <button id="closeButton"> 
+        <svg
+          class="window-menu-vector"
+          width="15"
+          height="15"
+          viewBox="0 0 15 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.3432 7.5L14.6075 3.23565C15.1308 2.71236 15.1308 1.86392 14.6075 1.3402L13.6598 0.392472C13.1365 -0.130824 12.2881 -0.130824 11.7643 0.392472L7.5 4.65682L3.23565 0.392472C2.71236 -0.130824 1.86392 -0.130824 1.3402 0.392472L0.392472 1.3402C-0.130824 1.86349 -0.130824 2.71193 0.392472 3.23565L4.65682 7.5L0.392472 11.7643C-0.130824 12.2876 -0.130824 13.1361 0.392472 13.6598L1.3402 14.6075C1.86349 15.1308 2.71236 15.1308 3.23565 14.6075L7.5 10.3432L11.7643 14.6075C12.2876 15.1308 13.1365 15.1308 13.6598 14.6075L14.6075 13.6598C15.1308 13.1365 15.1308 12.2881 14.6075 11.7643L10.3432 7.5Z"
+            fill="#797575"
+          />
+        </svg>
+        </button>
+        <svg
+          class="window-menu-line"
+          width="260"
+          height="2"
+          viewBox="0 0 260 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path d="M0 1.00014L260 1" stroke="black" />
+        </svg>
+        <button class="window-menu-frame">
+          <div class="window-menu-div2">Інформація щодо цієї дошки</div>
+        </button>
+        <button class="window-menu-frame">
+          <div class="window-menu-div2">Активність</div>
+        </button>
+      </div>
+    </div>
   <script>
-    function checkButton() {
-  console.log("Button clicked!");
-}
+
   var popupWindow = document.getElementById('popupWindow');
   var showWindowButton = document.getElementById('showWindowButton');
 
@@ -1185,6 +1219,41 @@ document.addEventListener('click', function(event) {
 function closePracticeFrameWindow() {
   practiceFrameWindow.style.display = 'none';
 }
+
+
+var windowMenu = document.getElementById('windowMenu');
+var navigationGroupButton = document.querySelector('.navigation-group');
+
+navigationGroupButton.addEventListener('click', function(e) {
+  e.stopPropagation();
+  toggleWindowMenu();
+});
+
+function toggleWindowMenu() {
+  windowMenu.style.display = (windowMenu.style.display === 'none' || windowMenu.style.display === '') ? 'block' : 'none';
+}
+
+document.addEventListener('click', function(event) {
+  if (!windowMenu.contains(event.target) && event.target !== navigationGroupButton) {
+    closeWindowMenu();
+  }
+});
+
+function closeWindowMenu() {
+  windowMenu.style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Отримати посилання на кнопку та вікно
+    var closeButton = document.getElementById("closeButton");
+    var windowMenu = document.querySelector(".window-menu");
+
+    // Додати обробник подій для кнопки
+    closeButton.addEventListener("click", function () {
+        // Закрити вікно (приховати його)
+        windowMenu.style.display = "none";
+    });
+});
 </script>
   </body>
 </html>

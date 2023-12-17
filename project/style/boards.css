@@ -1471,3 +1471,74 @@
 .navigation-group:hover .navigation-ellipse {
   background: #828282;
 }
+
+
+
+
+.window-menu{
+  width: 260px;
+  height: 908px;
+  position: relative;
+  left: 1611px;
+  display: none;
+}
+.window-menu-rectangle{
+  background: #f5f5f5;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  width: 260px;
+  height: 888px;
+  position: relative;
+  overflow: visible;
+}
+.window-menu-div{
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: 12px;
+}
+
+.window-menu-vector{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  overflow: visible;
+  left: 230px;
+  bottom: 5px;
+}
+.window-menu-line{
+  width: 260px;
+  height: 2px;
+  position:  relative;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+  margin-bottom: 20px;
+}
+.window-menu-div2{
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  
+}
+.window-menu-frame{
+background: #f5f5f5;
+width: 250px;
+height: 28px;
+position: relative;
+overflow: hidden;
+margin-bottom: 30px;
+transition: background 0.3s ease, border-radius 0.3s ease;
+left: 5px;
+}
+
+.window-menu-frame:hover{
+  background: #D6D6D6;
+  border-radius: 10px;
+}
+
