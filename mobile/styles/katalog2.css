@@ -1,0 +1,105 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 43rem;
+}.iphone-14-15-pro-max-7 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.main {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-top: 52px;
+}
+.main-heard {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.practice-txt {
+  margin: 1.2rem 12.3rem 0rem 0rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.3625;
+  color: #1c1b1f;
+  font-family: Noto Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  margin-top: 12px;
+}
+.to-share {
+  margin-top: 1.4rem;
+  box-sizing: border-box;
+  padding: 0.7rem 0rem 0.7rem 0.25rem;
+  width: 124px;
+  left: 285px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #ff7a00 -0%, #ffd699 100%);
+  border-radius: 0.6rem;
+  flex-shrink: 0;
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Noto Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  text-decoration: none;
+}
+.to-share img{
+  margin-right: 0.4rem;
+  width: 2.2rem;
+  height: 1.6rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.to-share:hover{
+  border: 1px solid #000;
+}
+.line {
+  margin: 0rem 1.1rem 2.1rem 1.9rem;
+  width: calc(100% - 3rem);
+  height: 0.1rem;
+  background-color: #000000;
+  flex-shrink: 0;
+}
+.participants-txt {
+  margin: 0rem 0rem 3.6rem 3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.3625;
+  color: #1c1b1f;
+  font-family: Noto Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+

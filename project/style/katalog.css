@@ -39,12 +39,15 @@ body {
     rgba(255, 214, 153, 1) 100%
   );
   text-align: left;
-  font-family: "Pacifico-Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 32px;
   font-weight: 400;
   position: absolute;
   left: 67px;
   top: 9px;
+  background: linear-gradient(to right,rgba(255, 5, 230, 1), rgba(255, 214, 153, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .site-icon {
   position: absolute;

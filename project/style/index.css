@@ -26,13 +26,16 @@
     rgba(255, 214, 153, 1) 100%
   );
   text-align: left;
-  font-family: "Pacifico-Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 32px;
   font-weight: 400;
   position: absolute;
   left: 71px;
   top: 8px;
   z-index: 1;
+  background: linear-gradient(to right,rgba(255, 5, 230, 1), rgba(255, 214, 153, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .frame-18 {
   height: 36px;
@@ -154,19 +157,22 @@
     rgba(255, 5, 230, 1) 0%,
     rgba(255, 214, 153, 1) 100%
   );
-  font-family: "Pacifico-Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 24px;
   font-weight: 400;
+  background: linear-gradient(to right,rgba(255, 5, 230, 1), rgba(255, 214, 153, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .task-tracker-2-span2 {
   color: #000000;
-  font-family: "Pacifico-Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 24px;
   font-weight: 400;
 }
 .task-tracker-2-span3 {
   color: #000000;
-  font-family: "Pacifico-Regular", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }

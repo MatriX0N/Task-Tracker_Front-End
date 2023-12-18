@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/boards.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico%3A400"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C600"/>
 
     <style>
       a,
@@ -77,7 +82,7 @@
           </g>
         </svg>
       </div>
-      <button class="user-information" id="showUserInfoButton">
+      <button class="user-information1" id="showUserInfoButton">
           <svg
             class="information"
             width="24"
@@ -780,7 +785,7 @@
       
         <div class="navigation-div">Поділитися</div>
       </button>
-      <button class="navigation-group">
+      <button class="navigation-group" id="bourd-info1">
         <div class="navigation-ellipse"></div>
         <div class="navigation-ellipse"></div>
         <div class="navigation-ellipse"></div>
@@ -951,42 +956,204 @@
       </div>
     </div>
 
-    <div class="window-menu" id="windowMenu">
-      <div class="window-menu-rectangle">
-        <div class="window-menu-div">Меню</div>
-        <button id="closeButton"> 
-        <svg
-          class="window-menu-vector"
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10.3432 7.5L14.6075 3.23565C15.1308 2.71236 15.1308 1.86392 14.6075 1.3402L13.6598 0.392472C13.1365 -0.130824 12.2881 -0.130824 11.7643 0.392472L7.5 4.65682L3.23565 0.392472C2.71236 -0.130824 1.86392 -0.130824 1.3402 0.392472L0.392472 1.3402C-0.130824 1.86349 -0.130824 2.71193 0.392472 3.23565L4.65682 7.5L0.392472 11.7643C-0.130824 12.2876 -0.130824 13.1361 0.392472 13.6598L1.3402 14.6075C1.86349 15.1308 2.71236 15.1308 3.23565 14.6075L7.5 10.3432L11.7643 14.6075C12.2876 15.1308 13.1365 15.1308 13.6598 14.6075L14.6075 13.6598C15.1308 13.1365 15.1308 12.2881 14.6075 11.7643L10.3432 7.5Z"
-            fill="#797575"
-          />
-        </svg>
-        </button>
-        <svg
-          class="window-menu-line"
-          width="260"
-          height="2"
-          viewBox="0 0 260 2"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          >
-          <path d="M0 1.00014L260 1" stroke="black" />
-        </svg>
-        <button class="window-menu-frame">
-          <div class="window-menu-div2">Інформація щодо цієї дошки</div>
-        </button>
-        <button class="window-menu-frame">
-          <div class="window-menu-div2">Активність</div>
-        </button>
+    <div class="lists">
+      <div class="list">
+        <div class="list-name">
+          <p>To Do</p>
+          <img class="img-actions-list" src="./assets/3.png"/>
+        </div>
+
+        <div class="card">
+          <div class="card-priority">highest priority</div>
+          <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra venenatis accumsan.</p>
+          <div class="card-footer">
+            <div class="date-time">
+              <img class="img-calendar" src="./assets/calendartoday.png"/>
+              <p class="date">Jan 29th, 2022 </p>
+              <img class="img-clock" src="./assets/schedule.png"/>
+              <p class="time">00:00</p>
+            </div>
+            <a href="#" class="a-card-info">
+              <img src="./assets/3.png"/>
+            </a>
+          </div>
+        </div>
+
+        <a class="create-card" href="#" id="create-card">
+          <img class="add-img" src="./assets/add.png"/>
+          <p class="create-card-txt">Додати картку</p>
+        </a>
+      </div>
+
+      <div class="list">
+        <div class="list-name">
+          <p>Doing</p>
+          <img class="img-actions-list" src="./assets/3.png"/>
+        </div>      
+
+        <a class="create-card" href="#" id="create-card">
+          <img class="add-img" src="./assets/add.png"/>
+          <p class="create-card-txt">Додати картку</p>
+        </a>
+      </div>
+      
+      <!-- Дії над списком -->
+      <div class="beak" id="form-actions-list">
+        <div class="form-actions-list">
+          <p>Дії над списком</p>
+          <a href="#" id="close4">
+            <img class="close-img" src="./assets/vector.png"/>
+          </a>
+          <a class="edit-title">Редагувати назву</a>
+          <a class="create-card create-a-task ">Створити картку</a>
+          <a class="delete-list">Видалити список</a>
+        </div>
+      </div>
+
+      <!-- Додати картку -->
+      <div class="beak" id="form-create-card">
+        <div class="form-create-card" >
+          <div class="list-name">
+            <p>Doing</p>
+          </div>
+          
+          <input class="input" type="text" placeholder="Увести назву для цієї картки...">
+          <div class="div1">
+            <a class="button">Додати картку</a>
+            <a href="#" id="close3">
+              <img class="close-img1" src="./assets/vector.png"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Дії над картку -->
+      <div class="beak" id="form-actions-card">
+        <div class="form-actions-list">
+          <p>Дії над карткую</p>
+          <a href="#" id="close5">
+            <img class="close-img" src="./assets/vector.png"/>
+          </a>
+          <a class="edit-title">Редагувати завдання</a>
+          <a class="delete-list">Видалити картку</a>
+        </div>
+      </div>
+      
+      <div class="">
+        <a class="create-list" href="#" id="create-list">
+          <img src="./assets/add.png"/>
+          <p>Створити новий список</p>
+        </a>
+
+        <!-- Cтворити список -->
+        <div class="form-create-description" id="form-create-list">
+          <input class="input" type="text" placeholder="Назва списку">
+          <div class="div">
+            <a class="button1">Створити</a>
+            <a href="#" id="close2">
+              <img class="close-img2" src="./assets/vector.png"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="form-bourd-info" id="form-bourd-info">
+      <a class="vector-qFJ" href="#" id="vector-qFJ">
+        <img src="./assets/vector.png"/>
+      </a>
+      <p class="form-bourd-info-name">Меню</p>
+      <img class="line-5"/>
+      <a class="button-information-about-this-board" href="#" id="button-information-about-this-board">
+        Інформація щодо цієї дошки
+      </a>
+
+      <a class="button-activity" href="#" id="button-activity">Активність</a>
+    </div>
+
+    <div class="form-information-about-this-board" id="form-information-about-this-board">
+      <div class="div1">
+        <a class="a-ctrl-z" href="#" id="a-ctrl-z">
+          <img class="ctrl-z" src="./assets/free-icon-down-arrow-2985150-1.png"/>
+        </a>
+        <p class="form-information-about-this-board-name">
+          Інформація щодо цієї дошки
+        </p>
+        <a class="a-close1" href="#" id="a-close1">
+          <img class="vector-Jyz" src="./assets/vector.png"/>
+        </a>
+        <img class="line-5"/>
+      </div>
+      <p class="admin-txt">Адміністратор цієї дошки</p>
+      <div class="div2">
+        <img class="avatar" src="http://surl.li/ogqpb"/>
+        <p class="user-information">
+          <span>
+            Володимир Онищук<br/>
+          </span>
+          <span class="user-sub-1">@user565423/Admin</span>
+        </p>
+      </div>
+
+      <a class="button-create-description" href="#" id="button-create-description">
+        <img src="./assets/add.png"/>
+        <p>Створити опис</p>
+      </a>
+
+      <!-- Створити опис -->
+      <div class="form-create-description" id="form-create-description">
+        <input class="input" type="text" placeholder="Введіть опис....">
+        <div class="div1">
+          <a class="button">Зберегти</a>
+          <a href="#" id="close">
+            <img class="close-img3" src="./assets/vector.png"/>
+          </a>
+        </div>
       </div>
     </div>
+
+    <div class="form-activity" id="form-activity">
+      <div class="div1">
+        <a class="a-ctrl-z" href="#" id="a-ctrl-z2">
+          <img class="ctrl-z" src="./assets/free-icon-down-arrow-2985150-1.png"/>
+        </a>
+        <p class="form-activity-name">
+          Активність
+        </p>
+        <a class="a-close1" href="#" id="a-close2">
+          <img class="vector-Jyz" src="./assets/vector.png"/>
+        </a>
+        <img class="line-5"/>
+      </div>
+      <div class="div2">
+        <div class="activity1">
+          <img class="avatar1" src="http://surl.li/ogqpb"/>
+          <p class="user-activity1">
+              Володимир Онищук<br/>
+            <span>перемістив(ла) Адаптація головної сторінки в фігм</span>
+          </p>
+        </div>
+        
+        <div class="activity1">
+          <img class="avatar1" src="http://surl.li/ogqpb"/>
+          <p class="user-activity1">
+              Володимир Онищук<br/>
+            <span>перемістив(ла) Адаптація головної сторінки в фігм</span>
+          </p>
+        </div>
+
+        <div class="activity1">
+          <img class="avatar1" src="http://surl.li/ogqpb"/>
+          <p class="user-activity1">
+              Володимир Онищук<br/>
+            <span>перемістив(ла) Адаптація головної сторінки в фігм</span>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
   <script>
 
   var popupWindow = document.getElementById('popupWindow');
@@ -1220,40 +1387,7 @@ function closePracticeFrameWindow() {
   practiceFrameWindow.style.display = 'none';
 }
 
-
-var windowMenu = document.getElementById('windowMenu');
-var navigationGroupButton = document.querySelector('.navigation-group');
-
-navigationGroupButton.addEventListener('click', function(e) {
-  e.stopPropagation();
-  toggleWindowMenu();
-});
-
-function toggleWindowMenu() {
-  windowMenu.style.display = (windowMenu.style.display === 'none' || windowMenu.style.display === '') ? 'block' : 'none';
-}
-
-document.addEventListener('click', function(event) {
-  if (!windowMenu.contains(event.target) && event.target !== navigationGroupButton) {
-    closeWindowMenu();
-  }
-});
-
-function closeWindowMenu() {
-  windowMenu.style.display = 'none';
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Отримати посилання на кнопку та вікно
-    var closeButton = document.getElementById("closeButton");
-    var windowMenu = document.querySelector(".window-menu");
-
-    // Додати обробник подій для кнопки
-    closeButton.addEventListener("click", function () {
-        // Закрити вікно (приховати його)
-        windowMenu.style.display = "none";
-    });
-});
 </script>
+<script type="text/javascript" src="./style/header3.js"></script>
   </body>
 </html>

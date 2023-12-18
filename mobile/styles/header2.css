@@ -1,0 +1,184 @@
+
+.group-participant {
+   margin: 0rem 1.7rem 3.4rem 2.2rem;
+   width: calc(100% - 3.9rem);
+   height: 5rem;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+ }
+ .avatar {
+   margin-right: 1.8rem;
+   width: 5rem;
+   height: 5rem;
+   object-fit: contain;
+   vertical-align: top;
+   flex-shrink: 0;
+   border-radius: 100%;
+ }
+ .information-txt {
+   max-width: 12.6rem;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+   flex-shrink: 0;
+ }
+ .user-information {
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+ }
+
+ .group-role {
+   box-sizing: border-box;
+   padding: 1rem 0rem 1rem 3.6rem;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+ }
+ .role {
+   margin-right: 0.5rem;
+   width: 14.3rem;
+   height: 100%;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #d9d9d9;
+   border-radius: 0.6rem;
+   flex-shrink: 0;
+ }
+
+
+
+.beak{
+   position: absolute;
+   width: 430px;
+   height: 932px;
+   background-color: #0000009f;
+   display: none;
+ }
+ .form-to-share {
+   box-sizing: border-box;
+   padding: 2.1rem 2.2rem 3.4rem 2.458rem;
+   width: 37.7rem;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   background-color: #f5f5f5;
+   border-radius: 4.7rem;
+   position: absolute;
+   top: 52px;
+   left: 28px;
+ }
+ .form-to-share-name {
+   margin: 0rem 0rem 3.5rem 0.592rem;
+   width: calc(100% - 0.5923rem);
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+ }
+ .form-to-share-name p {
+   margin-right: 5.15rem;
+   text-align: center;
+   font-size: 2.4rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+   white-space: nowrap;
+   flex-shrink: 0;
+ }
+ .to-share-X{
+   width: 1.9rem;
+   height: 1.9rem;
+   object-fit: contain;
+   vertical-align: top;
+   flex-shrink: 0;
+   position: absolute;
+   margin-left: 296px;
+ }
+ .to-share-X img {
+   width: 1.9rem;
+   height: 1.9rem;
+ }
+ .to-share-input {
+   margin: 0rem 1rem 6.4rem 0.842rem;
+   width: calc(100% - 1.8423rem);
+   height: 3.1rem;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+ }
+ .to-share-input input {
+   margin-right: 3.3rem;
+   width: 19.3rem;
+   height: 100%;
+   overflow: hidden;
+   padding-left: 6px;
+   position: relative;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #d9d9d9;
+   border-radius: 1rem;
+   flex-shrink: 0;
+ }
+ 
+ 
+ .button-to-share {
+   margin: 0.3rem 0rem 0.2rem 0rem;
+   width: 8.6rem;
+   height: calc(100% - 0.5rem);
+   cursor: pointer;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   color: #ffffff;
+   font-family: Noto Sans, 'Source Sans Pro';
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(180deg, #ff7a00 -0%, #ffd699 100%);
+   border-radius: 0.6rem;
+   flex-shrink: 0;
+   border: none;
+  }
+ .button-to-share:hover{
+   border: 1px solid #000;
+ }
+ .copy-link {
+   margin-right: 15.9577rem;
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 1.3625;
+   text-decoration-line: underline;
+   color: #000000;
+   font-family: Noto Sans, 'Source Sans Pro';
+   white-space: nowrap;
+   flex-shrink: 0;
+ }
