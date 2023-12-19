@@ -2362,3 +2362,22 @@ left: 5px;
   vertical-align: top;
   border-radius: 100px;
 }
+
+.online {
+  margin: 0.2rem 0.732rem 0.248rem 0rem;
+  width: 6.0558rem;
+  height: calc(100% - 0.4482rem);
+  display: flex;
+  flex-shrink: 0;
+  left: 1490px;
+  top: 10px;
+  position: absolute;
+}
+.ava-1, .ava-2, .ava-3 {
+  width: 2.1532rem;
+  height: 2.1333rem;
+  top: 0;
+  object-fit: contain;
+  vertical-align: top;
+  border-radius: 50%;
+}
