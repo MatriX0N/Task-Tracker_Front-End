@@ -4,6 +4,7 @@ import Main from './Main'
 import Auth from './Auth';
 import Reg from './Reg';
 import Katalog from './Katalog';
+import Participants from './Participants';
 function App() {
   return (
     <Router>
@@ -12,6 +13,7 @@ function App() {
                 <Route path='/Authorization' element={<Auth/>}/>
                 <Route path='/Registration' element={<Reg/>}/>
                 <Route path='/Katalog' element={<Katalog/>}/>
+                <Route path='/Parcticipant' element={<Participants/>}/>
             </Routes>
         </Router>
   );

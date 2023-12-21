@@ -1,0 +1,90 @@
+.side-bar {
+    width: 80px;
+    height: 1008px;
+    position: absolute;
+    top: 72px;
+  }
+  .side-bar-rectangle {
+    background: #f5f5f5;
+    width: 80px;
+    height: 1008px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .side-bar-group {
+    width: 41px;
+    height: 48px;
+    position: absolute;
+    left: 18px;
+    top: 32px;
+  }
+  
+  .side-bar-leaderboard {
+    height: auto;
+    position: absolute;
+    right: 19.51%;
+    left: 1.95%;
+    width: 100%;
+    bottom: 45.83%;
+    top: 4.17%;
+    height: 50%;
+    overflow: visible;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+  }
+  .side-bar-leaderboard:hover{
+    background: #FDC894;
+  }
+  
+  .side-bar-div {
+    color: #1c1b1f;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 0%;
+    left: 5%;
+    width: 100%;
+    bottom: 0%;
+    top: 66.67%;
+    height: 33.33%;
+  }
+  .side-bar-group1 {
+    width: 57px;
+    height: 44px;
+    position: absolute;
+    left: 11px;
+    top: 96px;
+  }
+  .side-bar-div2 {
+    color: #48454d;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    bottom: 0%;
+    top: 63.64%;
+    height: 36.36%;
+  }
+  .side-bar-person {
+    height: auto;
+    position: absolute;
+    right: 29.82%;
+    left: 6.07%;
+    width: 82.11%;
+    bottom: 45.45%;
+    top: 0%;
+    height: 54.55%;
+    overflow: visible;  
+    border-radius: 16px;
+    transition: background 0.3s ease;
+  }
+  .side-bar-person:hover{
+    background: #FDC894;
+  }
