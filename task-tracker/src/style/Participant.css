@@ -1,0 +1,327 @@
+.practice {
+    width: 724px;
+    height: 402px;
+    position: relative;
+    left: 400px;
+    top: 20px;
+    }
+  .practice2 {
+    color: #1c1b1f;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+
+  .practice-line {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 674px;
+    height: 0px;
+    position: absolute;
+    left: 3px;
+    top: 58px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  }
+
+  .practice-frame {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 122, 0, 1) 0%,
+      rgba(255, 214, 153, 1) 100%
+    );
+    border-radius: 6px;
+    padding: 7px 10px 7px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    position: relative;
+    left: 953px;
+    top: 100px;
+    border: 0px solid transparent;
+    transition: border 0.3s ease;
+    position: absolute;
+  }
+  
+  .practice-frame:hover{
+    border: 1px solid #000000;
+  }
+  
+
+  .person-add {
+    flex-shrink: 0;
+    width: 22px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+  }
+  .practice-div {
+    color: #ffffff;
+    text-align: center;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .practice-div2 {
+    color: #1c1b1f;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .practice-main {
+    width: 724px;
+    position: relative;
+  }
+  .practice-group{
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .practice-user {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    right: 92.4%;
+    left: 0%;
+    width: 7.6%;
+    bottom: 75.56%;
+    top: 0%;
+    height: 24.44%;
+    overflow: visible;
+    margin-right: 35px;
+  }
+
+  .practice-group-user {
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  .practice-group-user-span {
+    color: #000000;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .practice-group-user-span2 {
+    color: #000000;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .practice-group-frame {
+    background: #d9d9d9;
+    border-radius: 6px;
+    width: 137px;
+    height: 36px;
+    position: relative;
+    left: 310px;
+    top: 5px;
+    overflow: hidden;
+  }
+
+  .practice-group-div {
+    color: #000000;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .practice-group-vector{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 330px;
+    top: 11px;
+    overflow: visible;
+}
+
+
+
+
+
+.window-toshare {
+  width: 813px;
+  height: 479px;
+  position: absolute;
+  display: fix;
+  left: 500px;
+  top: 250px;
+  z-index: 1;
+}
+
+.window-toshare-rectangle {
+  background: #f5f5f5;
+  border-radius: 47px;
+  width: 813px;
+  height: 479px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.window-toshare-div{
+  color: #1c1b1f;
+  text-align: left;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  left: 33px;
+  top: 20px;
+  margin-bottom: 30px;
+}
+
+.window-toshare-frame {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 505px;
+  height: 51px;
+  position: relative;
+  left: 33px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.window-toshare-div2{
+  color: #000000;
+  text-align: left;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: relative;
+  left: 30px;
+  top: 9px;
+  padding-left: 10px;
+}
+
+.window-toshare-button {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 122, 0, 1) 0%,
+    rgba(255, 214, 153, 1) 100%
+  );
+  border-radius: 6px;
+  width: 137px;
+  height: 36px;
+  position: absolute;
+  left: 593px;
+  top: 74px;
+  overflow: hidden;
+  border: 0px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.window-toshare-button:hover{
+  border: 1px solid #000000;
+}
+.window-toshare-div3 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.window-toshare-main {
+  width: 724px;
+  position: relative;
+  left: 40px;
+}
+.window-toshare-group{
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.window-toshare-user {
+  width: 55px;
+  height: 55px;
+  position: relative;
+  right: 92.4%;
+  left: 0%;
+  width: 7.6%;
+  bottom: 75.56%;
+  top: 0%;
+  height: 24.44%;
+  overflow: visible;
+  margin-right: 35px;
+}
+
+.window-toshare-user1 {
+  color: #000000;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.window-toshare-user-span {
+  color: #000000;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.window-toshare-user-span2 {
+  color: #000000;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.window-toshare-frame2 {
+  background: #d9d9d9;
+  border-radius: 6px;
+  width: 137px;
+  height: 36px;
+  position: relative;
+  left: 315px;
+  top: 5px;
+  overflow: hidden;
+}
+
+.window-toshare-div4 {
+  color: #000000;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+.window-toshare-button2 {
+  width: 136px;
+  height: 16px;
+  position: absolute;
+  left: 44px;
+  top: 449px;
+}
+.window-toshare-div5 {
+  color: #000000;
+  text-align: center;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.window-toshare-div5:hover{
+  color: #45A6FF;
+}
