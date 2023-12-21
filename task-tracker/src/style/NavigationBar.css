@@ -1,0 +1,246 @@
+.navigation-bar {
+    width: 188px;
+    height: 218px;
+    position: relative;
+    left: 347px;
+    top: 44px;
+  }
+  .navigation-bar-line-3 {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 188px;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    top: 44px;
+  }
+  .navigation-bar-button {
+    width: 188px;
+    height: 32px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 0px;
+  }
+  .navigation-bar-rectangle{
+    border-radius: 16px;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    bottom: 0%;
+    top: 0%;
+    height: 100%;
+    transition: background 0.3s ease;
+  }
+  .navigation-bar-rectangle:hover{
+    background: #fdc894;
+  }
+  .navigation-bar-leaderboard {
+    height: auto;
+    position: absolute;
+    right: 78.72%;
+    left: 8.51%;
+    width: 12.77%;
+    bottom: 12.5%;
+    top: 12.5%;
+    height: 75%;
+    overflow: visible;
+  }
+  .navigation-bar-div {
+    color: #1c1b1f;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    right: 43.62%;
+    left: 34.57%;
+    width: 21.81%;
+    bottom: 25%;
+    top: 25%;
+    height: 50%;
+  }
+  
+  .navigation-bar-project{
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+    margin-bottom: 32px;
+    left: 4px;
+  }
+  .navigation-bar-practice{
+    color: #1c1b1f;
+    margin-bottom: 20px;
+    position: relative;
+    width: 188px;
+    height: 24px;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+  }
+  .navigation-bar-practice:hover{
+    background: #fdc894;
+    transform: translateX(3px);
+    transition: transform 0.3s ease;
+  }
+  .expand-more {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    right: 0%;
+    left: 44.23%;
+    width: 12.77%;
+    bottom: 0%;
+    top: 0%;
+    height: 100%;
+    transform: translate(0px, 0px);
+    overflow: visible;
+  }
+  .navigation-practice{
+    color: #1c1b1f;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+  }
+  .navigation-bar-button1{
+    width: 154px;
+    height: 22px;
+    position: relative;
+    left: 33px;
+    bottom: 15px;
+    display: fix;
+  }
+  .navigation-bar-participants {
+    width: 144px;
+    height: 24.51px;
+    position: relative;
+    left: 40px;
+    bottom: 10px;
+    border-radius: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: fix;
+  }
+  .navigation-bar-participants:hover{
+    background: #fdc894;
+    transform: scale(0.96);
+  }
+  .navigation-bar-group {
+    position: absolute;
+    inset: 0;
+  }
+  .navigation-bar-participants-div {
+    color: #48454d;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    right: 31.54%;
+    left: 31.54%;
+    width: 36.92%;
+    bottom: 20.83%;
+    top: 20.83%;
+    height: 58.33%;
+  }
+  .navigation-bar-person {
+    width: 26.58px;
+    height: 24.51px;
+    position: absolute;
+    right: 81.54%;
+    left: 0%;
+    width: 18.46%;
+    bottom: 0%;
+    top: 0%;
+    height: 100%;
+    overflow: visible;
+  }
+  .navigation-bar-add {
+    height: auto;
+    position: absolute;
+    right: 0%;
+    left: 89.23%;
+    width: 10.77%;
+    bottom: 20.83%;
+    top: 20.83%;
+    height: 58.33%;
+    overflow: visible;
+  }
+  
+  .main{
+    width: 946px;
+    position: relative;
+    left: 626px;
+    bottom: 165px;
+  }
+  .main-line{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    width: 941px;
+    position: relative;
+    left: 5px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+    margin-bottom: 10px;
+  }
+  
+  .main-rectangle {
+    border-radius: 16px;
+    width: 300px;
+    height: 120px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+  .main-task-tracker {
+    color: #ffffff;
+    text-align: left;
+    font-family: "NotoSans-SemiBold", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding: 10px;
+  }
+  .main-recent{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-group-img{
+    display: flex;
+  }
+  
+  .main-div-myproject {
+    color: #48454d;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .main-div-practice{
+    color: #48454d;
+    text-align: left;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .main-group {
+    position: relative;
+  }
