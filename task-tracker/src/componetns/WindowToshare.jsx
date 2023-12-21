@@ -10,34 +10,29 @@ function WindowToshare() {
     setPracticeFrameWindowOpen(!isPracticeFrameWindowOpen);
   };
 
-  const closePracticeFrameWindow = () => {
-    setPracticeFrameWindowOpen(false);
-  };
-
   const handleInputChange = (e) => {
     setEmailOrName(e.target.value);
   };
 
   useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (
-        practiceFrameWindowRef.current &&
-        !practiceFrameWindowRef.current.contains(event.target)
-      ) {
-        closePracticeFrameWindow();
+    function handleClickOutside(event) {
+      if (practiceFrameWindowRef.current && !practiceFrameWindowRef.current.contains(event.target)) {
+        setPracticeFrameWindowOpen(false);
       }
-    };
+    }
 
-    document.addEventListener('click', handleOutsideClick);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [practiceFrameWindowRef]);
 
+
+
   return (
     <>
-      <button className="practice-frame" id="practiceFrameButton" onMouseDown={togglePracticeFrameWindow}>
+      <button className="practice-frame" id="practiceFrameButton" onClick={togglePracticeFrameWindow}>
                   <svg
                     className="person-add"
                     width="23"
