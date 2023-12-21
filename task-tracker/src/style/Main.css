@@ -1,0 +1,70 @@
+.rectangle-19 {
+    border-radius: 0px;
+    width: 979px;
+    height: 569px;
+    position: absolute;
+    left: 470px;
+    top: 256px;
+    overflow: visible;
+  }
+
+  .task-tracker2 {
+    text-align: center;
+    position: absolute;
+    left: 756.5px;
+    top: 367px;
+    width: 416px;
+  }
+  .task-tracker-2-span {
+    color: linear-gradient(
+      90deg,
+      rgba(255, 5, 230, 1) 0%,
+      rgba(255, 214, 153, 1) 100%
+    );
+    font-family: "Pacifico-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .task-tracker-2-span2 {
+    color: #000000;
+    font-family: "Pacifico-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .task-tracker-2-span3 {
+    color: #000000;
+    font-family: "Pacifico-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .frame-19 {
+    height: 36px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 122, 0, 1) 0%,
+      rgba(255, 214, 153, 1) 100%
+    );
+    border-radius: 6px;
+    padding: 7px 10px 7px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 209px;
+    position: absolute;
+    left: 859.5px;
+    top: 575px;
+    border: 0px solid transparent;
+    transition: border 0.1s ease;
+  }
+
+  .div {
+    color: #ffffff;
+    text-align: center;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
