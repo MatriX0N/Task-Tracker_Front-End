@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Image from "../image/6e52c5529ce897d39c81652116f731d7.jpg";
 
 const UserDetails = () => {
     const [showDetails, setShowDetails] = useState(false);
@@ -52,11 +53,11 @@ const UserDetails = () => {
                                 transform="translate(0 -0.611111) scale(0.00173611)"
                             />
                         </pattern>
-                        <image
+                        <img
                             id="image0_112_731"
                             width="576"
                             height="1280"
-                            href="image/6e52c5529ce897d39c81652116f731d7.jpg"
+                            src={Image}
                         />
                     </defs>
                 </svg>

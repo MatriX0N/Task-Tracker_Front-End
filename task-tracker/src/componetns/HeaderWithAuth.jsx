@@ -57,9 +57,10 @@ const HeaderWithAuth = () => {
           </g>
         </svg>
       </div>
+            <UserDetails/>
             <UserInfo />
             <Notification/>
-            <UserDetails/>
+            
             <PopupWindow/>
             <RecentWindow/>
             <CreateWindow/>
