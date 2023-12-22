@@ -1,0 +1,90 @@
+.navigation {
+    background: rgba(245, 245, 245, 0.56);
+    width: 1840px;
+    height: 66px;
+    left: 80px;
+    position: absolute;
+  }
+  
+  .navigation-task-tracker {
+    color: #000000;
+    text-align: left;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .navigation-frame {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 122, 0, 1) 0%,
+      rgba(255, 214, 153, 1) 100%
+    );
+    border-radius: 6px;
+    padding: 7px 10px 7px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    position: relative;
+    left: 1603px;
+    top: 13px;
+    border: 0px solid transparent;
+    transition: border 0.3s ease;
+    position: absolute;
+  }
+  
+  .navigation-frame:hover{
+    border: 1px solid #000000;
+  }
+  
+  .person-add1 {
+    flex-shrink: 0;
+    width: 22px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+  }
+  .navigation-div {
+    color: #ffffff;
+    text-align: center;
+    font-family: "NotoSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .navigation-group {
+    width: 35px;
+    height: 9px;
+    position: relative;
+    display: flex;
+    left: 1741px;
+    bottom: 23px;
+  }
+  .navigation-ellipse {
+    background: #000000;
+    border-radius: 50%;
+    position: relative;
+    width: 29.03%;
+    height: 100%;
+    margin-right: 2px;
+  }
+  .navigation-group:hover .navigation-ellipse {
+    background: #828282;
+  }
+
+  .ava-1, .ava-2, .ava-3 {
+    width: 2.1532rem;
+    height: 2.1333rem;
+    left: 3.9026rem;
+    top: 0;
+    object-fit: contain;
+    vertical-align: top;
+    border-radius: 10px;
+  }
