@@ -26,41 +26,9 @@ const UserDetails = () => {
     return (
         <>
             <button id="showUserDetailsButton" onClick={toggleDetails}>
-                <svg
-                    className="user"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                    <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20 8.9543 40 20 40Z"
-                        fill="url(#pattern0)"
-                    />
-                    <defs>
-                        <pattern
-                            id="pattern0"
-                            patternContentUnits="objectBoundingBox"
-                            width="1"
-                            height="1"
-                        >
-                            <use
-                                xlinkHref="#image0_112_731"
-                                transform="translate(0 -0.611111) scale(0.00173611)"
-                            />
-                        </pattern>
-                        <img
-                            id="image0_112_731"
-                            width="576"
-                            height="1280"
-                            src={Image}
-                        />
-                    </defs>
-                </svg>
+            <a class="user">
+                <img id="Button-User-Info" src={Image}></img>
+            </a>
             </button>
 
             {showDetails && (

@@ -36,13 +36,14 @@ h5,
       rgba(255, 214, 153, 1) 100%
     );
     text-align: left;
-    font-family: "Pacifico-Regular", sans-serif;
+    font-family: "Pacifico", sans-serif;
     font-size: 32px;
     font-weight: 400;
     position: absolute;
     left: 71px;
-    top: 8px;
-    z-index: 1;
+    top: 20px;
+    z-index: 2;
+    
   }
 
   .rectangle-26 {

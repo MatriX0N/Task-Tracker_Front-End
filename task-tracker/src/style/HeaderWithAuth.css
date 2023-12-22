@@ -39,12 +39,15 @@
       rgba(255, 214, 153, 1) 100%
     );
     text-align: left;
-    font-family: "Pacifico-Regular", sans-serif;
+    font-family: "Pacifico", sans-serif;
     font-size: 32px;
     font-weight: 400;
     position: absolute;
     left: 67px;
     top: 9px;
+    background: linear-gradient(to right,rgba(255, 5, 230, 1), rgba(255, 214, 153, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .site-icon {
     position: absolute;
@@ -131,6 +134,23 @@
   }
   .user-information:hover{
     background: #D9D9D9;
+  }
+
+  .user {
+    height: 100%;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 100px;
+  }
+  .user img {
+    width: 2.7rem;
+    height: 2.7rem;
+    object-fit: contain;
+    vertical-align: top;
+    border-radius: 100px;
+  }
+  .user:hover{
+     border: 1px solid #000;
   }
   
   .information {
