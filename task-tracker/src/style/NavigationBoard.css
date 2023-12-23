@@ -88,3 +88,14 @@
     vertical-align: top;
     border-radius: 10px;
   }
+
+  .online {
+    margin: 0.2rem 0.732rem 0.248rem 0rem;
+    width: 6.0558rem;
+    height: calc(100% - 0.4482rem);
+    display: flex;
+    flex-shrink: 0;
+    left: 1490px;
+    top: 10px;
+    position: absolute;
+  }

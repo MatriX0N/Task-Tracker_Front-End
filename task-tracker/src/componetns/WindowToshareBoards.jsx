@@ -32,7 +32,7 @@ function WindowToshareBoards() {
 
   return (
     <>
-      <button className="practice-frame" id="practiceFrameButton" onClick={togglePracticeFrameWindow}>
+      <button className="practice-frame11" id="practiceFrameButton" onClick={togglePracticeFrameWindow}>
                   <svg
                     className="person-add"
                     width="23"

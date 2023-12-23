@@ -169,7 +169,7 @@
     color: #45A6FF;
   }
 
-  .practice-frame {
+  .practice-frame11 {
     background: linear-gradient(
       180deg,
       rgba(255, 122, 0, 1) 0%,
@@ -184,8 +184,8 @@
     justify-content: center;
     width: 124px;
     position: relative;
-    left: 1683px;
-    top: 85px;
+    left: 1600px;
+    top: 15px;
     border: 0px solid transparent;
     transition: border 0.3s ease;
     position: absolute;
