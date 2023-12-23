@@ -19,7 +19,7 @@ function Auth () {
       
    
     const authData = {
-      email: formData.email,
+      username: formData.email,
       password: formData.password,
     }
 
@@ -27,14 +27,15 @@ function Auth () {
 
     axios.post(apiUrl, authData)
       .then((response) => {
-        if (response.data.detail === 'Login successful.'){
+        console.log(response.data)
           localStorage.setItem('access_token', response.data.access_token)
           localStorage.setItem('refresh_token', response.data.refresh_token)
           console.log(response.data)
-        }
+        window.location.pathname = '/Katalog'
       })
       .catch((error) => {
         console.error('Помилка авторизації:', error)
+       
       });
  
   }
@@ -121,6 +122,7 @@ function Auth () {
             className="rectangle-19-1"
             type="email" 
             required placeholder="Введіть email"
+            name="email"
             value={formData.email}
             onChange={handleChange}
             />
@@ -130,6 +132,7 @@ function Auth () {
             className="rectangle-19-1" 
             placeholder="Введіть пароль" 
             type="password" 
+            name="password"
             required minlength="6"
             value={formData.password}
             onChange={handleChange}
