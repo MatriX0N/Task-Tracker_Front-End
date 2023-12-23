@@ -12,7 +12,7 @@ const HeaderWithoutAuth = () => {
                 <div class="rectangle-28"></div>
             </div>
             <button class="frame-18">
-                <div class="div">Увійти</div>
+                <a href="/Authorization" class="div">Увійти</a>
             </button>
         </div>
     );

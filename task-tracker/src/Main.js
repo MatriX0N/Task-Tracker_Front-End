@@ -87,7 +87,7 @@ function Main(){
       </div>
 
       <button class="frame-19">
-        <div class="div">Зареєструватись</div>
+        <a href="/Registration" class="div">Зареєструватись</a>
       </button>
         </div>
     );

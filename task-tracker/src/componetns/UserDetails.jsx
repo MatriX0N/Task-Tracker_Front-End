@@ -6,7 +6,7 @@ const UserDetails = () => {
     const [profileData, setProfileData] = useState(null);
     const userInfoDetRef = useRef(null);
     const token = localStorage.getItem('access_token')
-    const [profilePhoto, setProfilePhoto] = useState(null);
+    const [profilePhoto, setProfilePhoto] = useState('../image/6e52c5529ce897d39c81652116f731d7.jpg');
 
 
     useEffect(() => {
