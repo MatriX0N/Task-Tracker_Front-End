@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import './style/Auth.css'
+import axios from "axios";
+
 function Auth () {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData({ ...formData, [name]: value});
+    }
+
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      
+   
+    const authData = {
+      email: formData.email,
+      password: formData.password,
+    }
+
+    const apiUrl= 'https://vaabr5.pythonanywhere.com/api/user/login/';
+
+    axios.post(apiUrl, authData)
+      .then((response) => {
+        if (response.data.detail === 'Login successful.'){
+          localStorage.setItem('access_token', response.data.access_token)
+          localStorage.setItem('refresh_token', response.data.refresh_token)
+          console.log(response.data)
+        }
+      })
+      .catch((error) => {
+        console.error('Помилка авторизації:', error)
+      });
+ 
+  }
+
     return(
         <div>
             <div className="desktop-4-1">
@@ -79,14 +117,27 @@ function Auth () {
 
         <form className="frame-22-1">
           <div className="group-67-1">
-            <input className="rectangle-19-1" type="email" required placeholder="Введіть email"/>
+            <input 
+            className="rectangle-19-1"
+            type="email" 
+            required placeholder="Введіть email"
+            value={formData.email}
+            onChange={handleChange}
+            />
           </div>
           <div className="group-61-1">
-            <input className="rectangle-19-1" placeholder="Введіть пароль" type="password" required minlength="6"></input>
+            <input 
+            className="rectangle-19-1" 
+            placeholder="Введіть пароль" 
+            type="password" 
+            required minlength="6"
+            value={formData.password}
+            onChange={handleChange}
+            ></input>
           </div>
           <div className="forgot-your-password-1">Забули пароль?</div>
           <div className="continue-1">
-            <button className="rectangle-20-1"><div className="continue2-1">Продовжити</div></button>
+            <button className="rectangle-20-1" onClick={handleSubmit}><div className="continue2-1">Продовжити</div></button>
           </div>
         </form>
         <div className="frame-23-1">
