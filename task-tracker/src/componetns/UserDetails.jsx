@@ -1,9 +1,59 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Image from "../image/6e52c5529ce897d39c81652116f731d7.jpg";
+import axios from 'axios';
 
 const UserDetails = () => {
     const [showDetails, setShowDetails] = useState(false);
+    const [profileData, setProfileData] = useState(null);
     const userInfoDetRef = useRef(null);
+    const token = localStorage.getItem('access_token')
+    const [profilePhoto, setProfilePhoto] = useState(null);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            if(token){
+               const response = await axios.get('https://vaabr5.pythonanywhere.com/api/user/profile/photo/', {
+              headers: {
+                'Authorization': `Bearer ${token}`,
+              },
+            }); 
+            setProfilePhoto(response.data);
+            console.log(response.data);
+            }
+
+          } catch (error) {
+            console.error('Помилка при отриманні профілю:', error);
+            console.log(token)
+          }
+        };
+    
+        fetchData();
+      }, [token]); 
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            if(token){
+               const response = await axios.get('https://vaabr5.pythonanywhere.com/api/user/profile/', {
+              headers: {
+                'Authorization': `Bearer ${token}`,
+              },
+            }); 
+            setProfileData(response.data.user);
+            console.log(response.data.user);
+            }
+
+          } catch (error) {
+            console.error('Помилка при отриманні профілю:', error);
+            console.log(token)
+          }
+        };
+    
+        fetchData();
+      }, [token]); 
+
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -26,8 +76,8 @@ const UserDetails = () => {
     return (
         <>
             <button id="showUserDetailsButton" onClick={toggleDetails}>
-            <a class="user">
-                <img id="Button-User-Info" src={Image}></img>
+            <a className="user">
+                <img id="Button-User-Info" alt='noon' src={profilePhoto.photo_url}></img>
             </a>
             </button>
 
@@ -37,7 +87,7 @@ const UserDetails = () => {
                     <div className="e-mail-qwerty-qwerty">
                         E-mail:
                         <br />
-                        qwerty@qwerty.com
+                        {profileData.email}
                     </div>
                     <svg
                         className="user-interface-edit"
@@ -170,10 +220,12 @@ const UserDetails = () => {
                     <div className="user-565423-admin">
                         <span>
                             <span className="user-565423-admin-span">
-                                Володя Онищук
+                                {profileData.first_name + " " } 
+
+                                { profileData.last_name}
                                 <br />
                             </span>
-                            <span className="user-565423-admin-span2">@user565423/Admin</span>
+                            <span className="user-565423-admin-span2">{profileData.username}</span>
                         </span>
                     </div>
                     <button className="button-user">
