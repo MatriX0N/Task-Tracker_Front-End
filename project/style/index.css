@@ -16,7 +16,6 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: 1;
   
 }
 .task-tracker {
@@ -57,7 +56,6 @@
   top: 18px;
   border: 0px solid transparent;
   transition: border 0.1s ease;
-  z-index: 1;
 }
 
 .frame-18:hover{
