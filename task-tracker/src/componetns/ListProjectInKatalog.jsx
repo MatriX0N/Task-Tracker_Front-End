@@ -1,31 +1,44 @@
-import React, { useState } from "react";
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
-const ListProjectInKatalog = ({ data }) => {
-    const [activeItem, setActiveItem] = useState(null);
+function ListProjectInKatalog({ projectId }) {
+    const [boards, setBoards] = useState([]);
+    const token = localStorage.getItem('access_token');
+
+    useEffect(() => {
+        const fetchBoards = async () => {
+            try {
+                const response = await axios.get(
+                    `https://vaabr5.pythonanywhere.com/api/tracker/projects/${projectId}/boards/`,
+                    {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }
+                );
+
+                if (response.status !== 200) {
+                    throw new Error(`Failed to fetch boards: ${response.status}`);
+                }
+
+                const data = response.data; // Axios already parses JSON
+                setBoards(data);
+                console.log(data);
+            } catch (error) {
+                console.error(error.message);
+            }
+        };
+
+        fetchBoards();
+    }, [projectId, token]);
 
     return (
-        <div>
-            {data.map((item) => (
-                localStorage.getItem('userID') == item.author && (
-                <div>
-                    <div className="main-div-practice">{item.name}</div>
-                    <div className="main-group-img">
-                        <a href="boards.html">
-                            <div className="main-group">
-                                <img className="main-rectangle" src={Image} alt='' />
-                                <div className="main-task-tracker">TaskTracker</div>
-                            </div>
-                        </a>
-                        <div className="main-group">
-                            <img className="main-rectangle" src={Image} alt='' />
-                            <div className="main-task-tracker">TaskTracker</div>
-                        </div>
-                        <div className="main-group">
-                            <img className="main-rectangle" src={Image} alt='' />
-                            <div className="main-task-tracker">TaskTracker</div>
-                        </div>
-                    </div>
-                </div>)
+        <div className="main-group-img">
+            {boards.map(board => (
+                <div className="main-group">
+                    <img className="main-rectangle" src={board.background_photo} alt='' />
+                    <div className="main-task-tracker">{board.name}</div>
+                </div>
             ))}
         </div>
     );

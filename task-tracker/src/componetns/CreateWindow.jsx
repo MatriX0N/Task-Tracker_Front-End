@@ -1,10 +1,14 @@
+import axios from 'axios';
 import React, { useState, useRef, useEffect } from 'react';
 
 const CreateWindow = () => {
   const [createWindowVisible, setCreateWindowVisible] = useState(false);
   const [createBoardsWindowVisible, setCreateBoardsWindowVisible] = useState(false);
   const [createProjectWindowVisible, setCreateProjectWindowVisible] = useState(false);
-
+  const [selectedProject, setSelectedProject] = useState('');
+  const [projectName, setProjectName] = useState('');
+  const [file, setFile] = useState(null);
+  const [projectData, setProjectData] = useState([]);
   const showCreateButtonRef = useRef(null);
   const createBoardsButtonRef = useRef(null);
   const createProjectButtonRef = useRef(null);
@@ -40,18 +44,90 @@ const CreateWindow = () => {
     setCreateBoardsWindowVisible((prevVisible) => !prevVisible);
   };
 
-  const closeCreateBoardsWindow = () => {
-    setCreateBoardsWindowVisible(false);
-  };
-
   const toggleCreateProjectWindow = (e) => {
     e.stopPropagation();
     setCreateProjectWindowVisible((prevVisible) => !prevVisible);
   };
 
-  const closeCreateProjectWindow = () => {
-    setCreateProjectWindowVisible(false);
+  const handleCreateBoard = async (e) => {
+    e.preventDefault();
+    try {
+      if (selectedProject && file) {
+        const formData = new FormData();
+        formData.append('name', projectName);
+        formData.append('background_photo', file);
+
+        const response = await axios.post(
+          `https://vaabr5.pythonanywhere.com/api/tracker/projects/${selectedProject}/boards/create/`,
+          formData,
+          {
+            headers: {
+              'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
+              'Content-Type': 'multipart/form-data',
+            },
+          }
+        );
+
+        if (response.status === 201) {
+          console.log('Board created successfully:', response.data);
+          // Додатковий код для обробки успішного створення дошки
+        } else {
+          console.error('Failed to create board:', response.status, response.data);
+          // Додатковий код для обробки помилки
+        }
+      }
+    } catch (error) {
+      console.error('Error creating board:', error.message);
+    }
   };
+
+  const handleCreateProject = async () => {
+    try {
+      const response = await axios.post(
+        'https://vaabr5.pythonanywhere.com/api/tracker/projects/create/',
+        {
+          project_data: {
+            name: projectName,
+          },
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('access_token')}`,
+            'Content-Type': 'application/json',
+          },
+        }
+      );
+
+      if (response.status === 201) {
+        console.log('Project created successfully:', response.data);
+        // Очистити поле проекту після створення
+        setProjectName('');
+        // Додатковий код для обробки успішного створення проекту
+      } else {
+        console.error('Failed to create project:', response.status, response.data);
+        // Додатковий код для обробки помилки
+      }
+    } catch (error) {
+      console.error('Error creating project:', error.message);
+    }
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://vaabr5.pythonanywhere.com/api/tracker/projects/userProjects/', {
+          headers: {
+            'Authorization': `Bearer ${localStorage.getItem('access_token')}`,
+          },
+        });
+        setProjectData(response.data);
+      } catch (error) {
+        console.error('Помилка при отриманні проектів:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -105,7 +181,16 @@ const CreateWindow = () => {
             className="window-create-boards-input window-create-boards-div"
             required
             placeholder="Назва дошки"
-          ></input>
+            type="text"
+            value={projectName}
+            onChange={(e) => setProjectName(e.target.value)}
+          />
+
+          <input
+            style={{ width: '100px' }}
+            type="file"
+            onChange={(e) => setFile(e.target.files[0])}
+          />
 
           <button>
             <svg
@@ -125,15 +210,31 @@ const CreateWindow = () => {
 
           <div className="window-create-boards-div2">Створити дошку</div>
           <div className="window-create-boards-div3">Оберіть проект</div>
-          <button className="window-create-boards-button">
-            <div className="window-create-boards-div4">Створити</div>
-          </button>
-          <select className="window-create-boards-select">
-            <option>Practice</option>
-            <option>Practice2.0</option>
+
+          <select
+            className="window-create-boards-select"
+            onChange={(e) => setSelectedProject(e.target.value)}
+            value={selectedProject.id}
+          >
+            {/* Заповнення варіантів з динамічних даних */}
+            {projectData.map((project) => (
+              <option key={project.id} value={project.id}>
+                {project.name}
+              </option>
+            ))}
           </select>
+
+          <input
+            type="submit"
+            className="window-create-boards-button"
+            value="Створити"
+            onClick={handleCreateBoard}
+          />
+
         </form>
       </div>
+
+
 
       <div className="window-create-project" id="createProjectWindow" style={{ display: createProjectWindowVisible ? 'block' : 'none' }}>
         <div className="window-create-project-rectangle"></div>
@@ -141,7 +242,9 @@ const CreateWindow = () => {
           <input
             className="window-create-project-input window-create-project-div"
             required
-            placeholder="Назва дошки"
+            placeholder="Назва проекту"
+            value={projectName}
+            onChange={(e) => setProjectName(e.target.value)}
           ></input>
           <svg
             className="window-create-project-vector"
@@ -159,7 +262,7 @@ const CreateWindow = () => {
 
           <div className="window-create-project-div2">Створити проект</div>
           <div className="window-create-project-div3">Опис проекту</div>
-          <button className="window-create-project-button">
+          <button className="window-create-project-button" onClick={handleCreateProject}>
             <div className="window-create-project-div4">Створити</div>
           </button>
           <input

@@ -30,33 +30,16 @@ function NavigationBar() {
     fetchData();
   }, [token]); 
 
-  const [practice1DivVisible, setPractice1DivVisible] = useState(true);
-  const [practice2DivVisible, setPractice2DivVisible] = useState(true);
-  const [showDivsButtonClicked, setShowDivsButtonClicked] = useState(false);
+  
 
-  const toggleDivs = (practiceDivId) => {
-    if (practiceDivId === 'practice1Div') {
-      setPractice1DivVisible(true);
-      setPractice2DivVisible(false);
-      setShowDivsButtonClicked(false);
-    } else if (practiceDivId === 'practice2Div') {
-      setPractice2DivVisible(true);
-      setPractice1DivVisible(false);
-      setShowDivsButtonClicked(false);
-    }
-  };
-  const handleShowDivsButtonClick = () => {
-    setShowDivsButtonClicked(true);
-    setPractice2DivVisible(true);
-    setPractice1DivVisible(true);
-  };
+
 
 
   return (
     <div>
       <div className="navigation-bar">
         <div className="navigation-bar-line-3"></div>
-        <button id="showDivsButton" className="navigation-bar-button" onClick={handleShowDivsButtonClick}>
+        <button id="showDivsButton" className="navigation-bar-button" >
           <div className="navigation-bar-rectangle">
             <svg
               class="navigation-bar-leaderboard"
@@ -99,15 +82,27 @@ function NavigationBar() {
       <div className="main">
   
         <div className="main-div-myproject">Мої Проекти</div>
-        <div className="main-recent" id='practice1Div' style={{ display: practice1DivVisible ? 'block' : 'none' }}>
+        <div className="main-recent" id='practice1Div' >
         {projectData && (
-          <ListProjectInKatalog data = {projectData}/>
+          projectData.map((item) => (
+             item.author == localStorage.getItem('userID') && (
+              <div >
+              <div className="main-div-practice">
+                 {item.name}
+              </div>
+             
+              <ListProjectInKatalog projectId = {item.id}/>
+              
+             </div>
+             )
+            
+          ))
           )}
         </div>
 
         
 
-        <div className="main-recent" id='practice1Div' style={{ display: showDivsButtonClicked ? 'block' : 'none' }}>
+        <div className="main-recent" id='practice1Div' >
           <div className="main-line"></div>
 
           <div className="main-div-myproject">Гостьові Проекти</div>
@@ -129,7 +124,7 @@ function NavigationBar() {
           </div>
         </div>
 
-        <div className="main-recent" id='practice2Div' style={{ display: showDivsButtonClicked ? 'block' : 'none' }}>
+        <div className="main-recent" id='practice2Div' >
           <div className="main-div-practice">Practice2</div>
           <div className="main-group-img">
             <div className="main-group">

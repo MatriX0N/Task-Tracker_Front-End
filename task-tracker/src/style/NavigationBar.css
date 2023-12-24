@@ -200,7 +200,7 @@
     margin-bottom: 15px;
   }
   .main-task-tracker {
-    color: #ffffff;
+    color: black;
     text-align: left;
     font-family: "NotoSans-SemiBold", sans-serif;
     font-size: 12px;
@@ -215,7 +215,10 @@
     flex-direction: column;
   }
   .main-group-img{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
   }
   
   .main-div-myproject {

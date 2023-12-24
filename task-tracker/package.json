@@ -7,9 +7,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.2",
+    "local-cors-proxy": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.0",
+    "name": "your-react-app",
+  "version": "1.0.0",
+  "proxy": "https://vaabr5.pythonanywhere.com/",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
