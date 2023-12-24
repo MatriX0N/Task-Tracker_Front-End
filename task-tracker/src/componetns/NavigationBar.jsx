@@ -3,6 +3,7 @@ import "../style/NavigationBar.css"
 import Image from "../image/lm.png";
 import axios from 'axios';
 import ProjectNameList from './ProjectNameList';
+import ListProjectInKatalog from './ListProjectInKatalog';
 
 function NavigationBar() {
   const token = localStorage.getItem('access_token')
@@ -96,63 +97,15 @@ function NavigationBar() {
       </div>
 
       <div className="main">
-        <div className="main-recent" style={{ display: showDivsButtonClicked ? 'block' : 'none' }}>
-          <div className="main-div-myproject">Нещодавні</div>
-          <div className="main-group-img">
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-          </div>
-          <div className="main-line"></div>
-        </div>
+  
         <div className="main-div-myproject">Мої Проекти</div>
         <div className="main-recent" id='practice1Div' style={{ display: practice1DivVisible ? 'block' : 'none' }}>
-
-          <div className="main-div-practice">Practice</div>
-          <div className="main-group-img">
-            <a href="boards.html">
-              <div className="main-group">
-                <img className="main-rectangle" src={Image} />
-                <div className="main-task-tracker">TaskTracker</div>
-              </div>
-            </a>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-          </div>
+        {projectData && (
+          <ListProjectInKatalog data = {projectData}/>
+          )}
         </div>
 
-        <div className="main-recent" id='practice2Div' style={{ display: practice2DivVisible ? 'block' : 'none' }}>
-          <div className="main-div-practice">Practice2</div>
-          <div className="main-group-img">
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker2</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracker2</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} />
-              <div className="main-task-tracker">TaskTracke2r2</div>
-            </div>
-          </div>
-        </div>
+        
 
         <div className="main-recent" id='practice1Div' style={{ display: showDivsButtonClicked ? 'block' : 'none' }}>
           <div className="main-line"></div>
@@ -162,15 +115,15 @@ function NavigationBar() {
           <div className="main-div-practice">Practice</div>
           <div className="main-group-img">
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
           </div>
@@ -180,15 +133,15 @@ function NavigationBar() {
           <div className="main-div-practice">Practice2</div>
           <div className="main-group-img">
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
             <div className="main-group">
-              <img className="main-rectangle" src={Image} />
+              <img className="main-rectangle" src={Image} alt='' />
               <div className="main-task-tracker">TaskTracker</div>
             </div>
           </div>
