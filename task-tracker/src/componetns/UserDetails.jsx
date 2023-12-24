@@ -19,12 +19,11 @@ const UserDetails = () => {
               },
             }); 
             setProfilePhoto(response.data);
-            console.log(response.data);
+
             }
 
           } catch (error) {
-            console.error('Помилка при отриманні профілю:', error);
-            console.log(token)
+            console.error('Помилка при отриманні профілю:', error); 
           }
         };
     
@@ -42,7 +41,6 @@ const UserDetails = () => {
               },
             }); 
             setProfileData(response.data.user);
-            console.log(response.data.user);
             }
 
           } catch (error) {
@@ -76,9 +74,9 @@ const UserDetails = () => {
     return (
         <>
             <button id="showUserDetailsButton" onClick={toggleDetails}>
-            <a className="user">
+            <div className="user">
                 <img id="Button-User-Info" alt='noon' src={profilePhoto.photo_url}></img>
-            </a>
+            </div>
             </button>
 
             {showDetails && (
@@ -87,7 +85,12 @@ const UserDetails = () => {
                     <div className="e-mail-qwerty-qwerty">
                         E-mail:
                         <br />
-                        {profileData.email}
+                        {profileData &&(
+                            <div>
+                                {profileData.email}
+                            </div>
+                        
+                        )}
                     </div>
                     <svg
                         className="user-interface-edit"

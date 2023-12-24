@@ -9,10 +9,8 @@ const refreshAccessToken = async (refreshToken) => {
       });
   
       const newAccessToken = response.data.access;
-      console.log(response.data.access);
       // Збереження нового токену доступу, наприклад, у localStorage або стані компонента
       localStorage.setItem('access_token', newAccessToken);
-      console.log('Новий токен доступу:', newAccessToken);
       
       return newAccessToken;
     } catch (error) {
