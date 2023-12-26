@@ -1,10 +1,35 @@
 import React, { useState, useRef, useEffect } from 'react';
+import axios from 'axios';
 
 const PopupWindow = () => {
 
+  const token = localStorage.getItem('access_token')
+  const [projectData, setProjectData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        if (token) {
+          const response = await axios.get('https://vaabr5.pythonanywhere.com/api/tracker/projects/userProjects/', {
+            headers: {
+              'Authorization': `Bearer ${token}`,
+            },
+          });
+          setProjectData(response.data);
+
+        }
+
+      } catch (error) {
+        console.error('Помилка при отриманні проектів:', error);
+
+      }
+    };
+
+    fetchData();
+  }, [token]);
 
 
-const [PopupWindowPopup, setShowPopup] = useState(false);
+  const [PopupWindowPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
 
   const handleClickOutside = (event) => {
@@ -50,8 +75,8 @@ const [PopupWindowPopup, setShowPopup] = useState(false);
       {PopupWindowPopup && (
         <div className="project-window" id="popupWindow" ref={popupRef}>
           <div className="project-window-rectangle"></div>
-          <div className="project-window-div">Гостьові робочі зони</div>
-          <div className="project-window-div2">Поточна робоча зона</div>
+
+
           <svg
             className="project-window-line"
             width="216"
@@ -63,13 +88,21 @@ const [PopupWindowPopup, setShowPopup] = useState(false);
             <path d="M0 1L216 1.00002" stroke="black" />
           </svg>
           <div className="project-window-div3">Ваші робочі зони</div>
+
+          {projectData && (
+            projectData.map((item) => (
+              item.author == localStorage.getItem('userID') && (
+                <button className="project-window-project2">
+                  <div className="project-window-practice">{item.name}</div>
+                </button>
+              )
+            ))
+          )}
+
+
+          <div className="project-window-div">Гостьові робочі зони</div>
           <button className="project-window-div4">Project 2.0</button>
-          <button className="project-window-project">
-            <div className="project-window-practice">Practice</div>
-          </button>
-          <button className="project-window-project2">
-            <div className="project-window-practice">Practice</div>
-          </button>
+
         </div>
       )}
     </>

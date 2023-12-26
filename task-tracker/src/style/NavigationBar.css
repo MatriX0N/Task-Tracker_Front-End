@@ -215,8 +215,9 @@
     flex-direction: column;
   }
   .main-group-img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
     gap: 5px;
 
   }

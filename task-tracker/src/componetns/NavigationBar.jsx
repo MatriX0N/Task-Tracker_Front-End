@@ -8,6 +8,7 @@ import ListProjectInKatalog from './ListProjectInKatalog';
 function NavigationBar() {
   const token = localStorage.getItem('access_token')
   const [projectData, setProjectData] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,7 +32,9 @@ function NavigationBar() {
   }, [token]); 
 
   
-
+  const handleProjectClick = (projectId) => {
+    setSelectedProject(projectId);
+  };
 
 
 
@@ -39,7 +42,7 @@ function NavigationBar() {
     <div>
       <div className="navigation-bar">
         <div className="navigation-bar-line-3"></div>
-        <button id="showDivsButton" className="navigation-bar-button" >
+        <button id="showDivsButton" className="navigation-bar-button" onClick={() => handleProjectClick(null)}>
           <div className="navigation-bar-rectangle">
             <svg
               class="navigation-bar-leaderboard"
@@ -73,7 +76,7 @@ function NavigationBar() {
         <div className="navigation-bar-project">Проекти</div>
 
         {projectData && (
-          <ProjectNameList data = {projectData} />
+          <ProjectNameList data = {projectData} onProjectClick={handleProjectClick} />
         )}
         
 
@@ -85,8 +88,8 @@ function NavigationBar() {
         <div className="main-recent" id='practice1Div' >
         {projectData && (
           projectData.map((item) => (
-             item.author == localStorage.getItem('userID') && (
-              <div >
+             item.author == localStorage.getItem('userID')  && (item.id === selectedProject || selectedProject === null) && (
+              <div key={item.id}>
               <div className="main-div-practice">
                  {item.name}
               </div>
