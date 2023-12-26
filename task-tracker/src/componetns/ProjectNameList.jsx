@@ -8,6 +8,11 @@ const ProjectNameList = ({ data, onProjectClick }) => {
     setActiveItem((prevActiveItem) => (prevActiveItem === itemIndex ? null : itemIndex));
   };
 
+  const ParticipantClick = (ProjectID) => {
+    localStorage.setItem('projectID' , ProjectID);
+    window.location.pathname= '/Parcticipant';
+  }
+
   return (
     <div>
       {data.map((item) => (
@@ -78,8 +83,8 @@ const ProjectNameList = ({ data, onProjectClick }) => {
                   <div className="navigation-bar-div">Дошки</div>
                 </button>
               </button>
-              <a href="Parcticipant">
-                <button id="participants1Div" className="navigation-bar-participants">
+              <a  onClick={ParticipantClick(item.id)}>
+                <button  id="participants1Div" className="navigation-bar-participants">
                   <div className="navigation-bar-group">
                     <div className="navigation-bar-participants-div">Учасники</div>
                     <svg

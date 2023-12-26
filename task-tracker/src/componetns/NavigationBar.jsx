@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "../style/NavigationBar.css"
-import Image from "../image/lm.png";
 import axios from 'axios';
 import ProjectNameList from './ProjectNameList';
 import ListProjectInKatalog from './ListProjectInKatalog';
@@ -88,7 +87,7 @@ function NavigationBar() {
         <div className="main-recent" id='practice1Div' >
         {projectData && (
           projectData.map((item) => (
-             item.author == localStorage.getItem('userID')  && (item.id === selectedProject || selectedProject === null) && (
+             (item.author == localStorage.getItem('userID') || item.id === localStorage.getItem('projectID'))  && (item.id === selectedProject || selectedProject === null) && (
               <div key={item.id}>
               <div className="main-div-practice">
                  {item.name}
@@ -105,45 +104,7 @@ function NavigationBar() {
 
         
 
-        <div className="main-recent" id='practice1Div' >
-          <div className="main-line"></div>
 
-          <div className="main-div-myproject">Гостьові Проекти</div>
-
-          <div className="main-div-practice">Practice</div>
-          <div className="main-group-img">
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="main-recent" id='practice2Div' >
-          <div className="main-div-practice">Practice2</div>
-          <div className="main-group-img">
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-            <div className="main-group">
-              <img className="main-rectangle" src={Image} alt='' />
-              <div className="main-task-tracker">TaskTracker</div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

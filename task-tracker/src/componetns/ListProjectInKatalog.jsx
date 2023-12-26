@@ -33,10 +33,15 @@ function ListProjectInKatalog({ projectId }) {
         fetchBoards();
     }, [projectId, token]);
 
+    const onClickBoard = (boardID) => {
+        localStorage.setItem('boardID', boardID);
+        window.location.pathname = '/Boards'
+    }
+
     return (
         <div className="main-group-img">
             {boards.map(board => (
-                <div className="main-group">
+                <div className="main-group" onClick={() => onClickBoard(board.id)}>
                     <img className="main-rectangle" src={Image} alt='' />
                     <div className="main-task-tracker">{board.name}</div>
                 </div>

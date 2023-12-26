@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AddImg from '../../image/assets/add.png'
 import ListImg from '../../image/assets/3.png'
 import Image from '../../image/assets/vector.png';
-import '../../style/Boards/NewList.css'
 
 const NewTask = () => {
   const [isFormVisible, setFormVisibility] = useState(false);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (formRef.current && !formRef.current.contains(event.target)) {
+        hideForm();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [formRef]);
 
   const showForm = () => {
     setFormVisibility(true);
@@ -35,8 +49,8 @@ const NewTask = () => {
       </div>
 
       {isFormVisible && (
-        <div className="beak" id="form-create-card">
-          <div className="form-create-card">
+        <div className="beak" id="form-create-card" >
+          <div className="form-create-card" ref={formRef}>
             <div className="list-name">
               <p>Doing</p>
             </div>

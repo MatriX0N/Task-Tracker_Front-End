@@ -225,25 +225,24 @@
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
+    z-index: 1;
   }
   .list-name p {
-    margin-right: 12.4rem;
+
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.3625;
+
     color: #000000;
     font-family: Noto Sans, 'Source Sans Pro';
     white-space: nowrap;
-    flex-shrink: 0;
+
   }
   .list-name img {
-    margin-bottom: 0.24rem;
-    width: 2.7349rem;
-    height: 2.56rem;
-    margin-left: 144px;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
+
+    margin-left: auto; /* Автоматичне розташування зображення справа */
+  height: 2.56rem;
+
+
   }
   
   
@@ -258,6 +257,7 @@
     background-color: #ffffff;
     border-radius: 1.6rem;
     flex-shrink: 0;
+    
   }
   .card-priority {
     color: #5e0f0a;
@@ -347,7 +347,7 @@
   .a-card-info img {
     width: 2.4rem;
     height: 2.4rem;
-    margin-left: 125px;
+    margin-left: 100px;
     object-fit: contain;
     vertical-align: top;
     flex-shrink: 0;
@@ -419,7 +419,7 @@
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;
     border-radius: 1.2rem;
-    display: none;
+
   }
   .vector-qFJ {
     width: 1.5rem;
@@ -549,7 +549,7 @@
     width: 1920px;
     height: 1080px;
     background-color: #0000009f;
-    display: none;
+   
   }
   
    .beak{
@@ -568,7 +568,7 @@
     background-color: #f5f5f5;
     border-radius: 1.6rem;
     flex-shrink: 0;
-    display: none;
+
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -707,7 +707,7 @@
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;
     border-radius: 1.2rem;
-    display: none;
+
     flex-wrap: wrap;
     flex-direction: column;
     padding-bottom: 10px;
@@ -863,7 +863,6 @@
     background-color: #f5f5f5;
     border-radius: 1.6rem;
     flex-shrink: 0;
-    display: none;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -932,7 +931,6 @@
     box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     background-color: #f5f5f5;
     border-radius: 1.2rem;
-    display: none;
     flex-wrap: wrap;
     flex-direction: column;
     padding-bottom: 10px;

@@ -5,7 +5,6 @@ const PopupWindow = () => {
 
   const token = localStorage.getItem('access_token')
   const [projectData, setProjectData] = useState(null);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -16,12 +15,9 @@ const PopupWindow = () => {
             },
           });
           setProjectData(response.data);
-
         }
-
       } catch (error) {
         console.error('Помилка при отриманні проектів:', error);
-
       }
     };
 
@@ -48,6 +44,11 @@ const PopupWindow = () => {
   const togglePopup = () => {
     setShowPopup(!PopupWindowPopup);
   };
+
+  const onButtonClick = (projectID ) => {
+    localStorage.setItem('projectID' , projectID)
+    window.location.pathname = '/Katalog'
+  }
 
   return (
     <>
@@ -92,7 +93,7 @@ const PopupWindow = () => {
           {projectData && (
             projectData.map((item) => (
               item.author == localStorage.getItem('userID') && (
-                <button className="project-window-project2">
+                <button className="project-window-project2" onClick={() => onButtonClick(item.id)}>
                   <div className="project-window-practice">{item.name}</div>
                 </button>
               )
