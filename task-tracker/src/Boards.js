@@ -3,6 +3,8 @@ import HeaderWithAuth from "./componetns/HeaderWithAuth";
 import SideBar from "./componetns/SideBar";
 import NavigationBoard from "./componetns/NavigationBoard";
 import axios from "axios";
+import NewList from "./componetns/Boards/NewList";
+import List from "./componetns/Boards/List";
 
 const refreshAccessToken = async (refreshToken) => {
     try {
@@ -31,6 +33,7 @@ function Boards(){
             <HeaderWithAuth/>
             <SideBar/>
             <NavigationBoard/>
+            <List/>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import Image from '../image/lm.png'
 
 function ListProjectInKatalog({ projectId }) {
     const [boards, setBoards] = useState([]);
@@ -36,7 +37,7 @@ function ListProjectInKatalog({ projectId }) {
         <div className="main-group-img">
             {boards.map(board => (
                 <div className="main-group">
-                    <img className="main-rectangle" src={board.background_photo} alt='' />
+                    <img className="main-rectangle" src={Image} alt='' />
                     <div className="main-task-tracker">{board.name}</div>
                 </div>
             ))}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NewList from './componetns/Boards/NewList';
 
 
 const Test = () => {
@@ -6,7 +7,7 @@ const Test = () => {
 
   return (
     <div>
-      <img style={{width : "1000px"}} src='./image/lm.png'/>
+      <NewList/>
     </div>
   );
 };
