@@ -339,9 +339,8 @@
     font-family: "NotoSans-DisplayRegular", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-    left: 23px;
-    top: 176px;
+    position: relative;
+
   }
   .project-window-div2 {
     color: #000000;
@@ -365,12 +364,12 @@
   .project-window-div3 {
     color: #000000;
     text-align: center;
-    font-family: "NotoSans-Regular", sans-serif;
+    font-family: "NotoSans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-    left: 23px;
-    top: 85px;
+    position: relative;
+    left: 0px;
+    top: 10px;
   }
   .project-window-div4 {
     color: #000000;
@@ -378,9 +377,9 @@
     font-family: "NotoSans-Bold", sans-serif;
     font-size: 20px;
     font-weight: 700;
-    position: absolute;
-    left: 23px;
-    top: 207px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 20px;
     border-radius: 16px;
     transition: background 0.3s ease;
   }
@@ -402,24 +401,22 @@
   }
   .project-window-practice {
     color: #000000;
-    text-align: center;
+    text-align: left;
     font-family: "NotoSans-Bold", sans-serif;
     font-size: 20px;
     font-weight: 700;
-    position: absolute;
-    right: -7.04%;
+    position: relative;
     left: -7.04%;
     width: 114.08%;
     bottom: 0%;
-    top: 0%;
     height: 100%;
   }
   .project-window-project2 {
     width: 91px;
     height: 27px;
-    position: absolute;
-    left: 18px;
-    top: 116px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
     border-radius: 16px;
     transition: background 0.3s ease;
   }

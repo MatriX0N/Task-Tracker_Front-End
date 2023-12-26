@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 
-const ProjectNameList = ({ data }) => {
+const ProjectNameList = ({ data, onProjectClick }) => {
   const [activeItem, setActiveItem] = useState(null);
 
   const handleItemClick = (itemIndex) => {
@@ -48,7 +48,7 @@ const ProjectNameList = ({ data }) => {
           {activeItem === item.id && (
             <div style={{ marginRight: '45px' }}>
               <button id="practice1Div" className="navigation-bar-button1">
-                <button className="navigation-bar-rectangle">
+                <button className="navigation-bar-rectangle" onClick={() => onProjectClick(item.id)}>
                   <svg
                     className="navigation-bar-leaderboard"
                     width="24"
